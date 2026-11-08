@@ -1,0 +1,8 @@
+KVN includes Kotlin runtime, Kotlin coroutines, AndroidX Activity/Core/Compose,
+Material3 and their AndroidX dependencies, under the Apache License, Version 2.0.
+Copyright their respective contributors, including The Android Open Source Project
+and JetBrains s.r.o. Versioned dependency reports accompany the build artifacts.
+The full Apache license is included in Apache-2.0.txt. Go runtime's BSD license
+is included in Go-LICENSE.txt. Native module-specific notices and corresponding
+source archives are distributed alongside the APK; see go/modules.json and
+cronet-native/PROVENANCE.json. These attributions do not imply affiliation.

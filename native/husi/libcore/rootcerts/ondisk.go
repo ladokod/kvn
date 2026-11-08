@@ -1,0 +1,98 @@
+package rootcerts
+
+import (
+	"os"
+	"path/filepath"
+	"strings"
+
+	"github.com/sagernet/sing-box/log"
+	"github.com/sagernet/sing/common"
+	E "github.com/sagernet/sing/common/exceptions"
+)
+
+const (
+	certFileEnv = "SSL_CERT_FILE"
+	certDirEnv  = "SSL_CERT_DIR"
+)
+
+func appendSystemRootCAs(roots *Bundle, withUserTrust bool) error {
+	certFilePath, certDirPath := os.Getenv(certFileEnv), os.Getenv(certDirEnv)
+	if certFilePath != "" || certDirPath != "" {
+		return appendOnDiskRootCAs(roots, certFilePath, certDirPath)
+	}
+	return appendPlatformRootCAs(roots, withUserTrust)
+}
+
+func appendOnDiskRootCAs(roots *Bundle, certFilePath, certDirPath string) error {
+	files := certFiles
+	if certFilePath != "" {
+		files = []string{certFilePath}
+	}
+	for _, file := range files {
+		content, err := os.ReadFile(file)
+		if err != nil {
+			continue
+		}
+		if err := roots.Append(content); err != nil {
+			log.Warn("load certificates from ", file, ": ", err)
+		}
+		break
+	}
+
+	directories := certDirectories
+	if certDirPath != "" {
+		directories = filepath.SplitList(certDirPath)
+	}
+	for _, directory := range directories {
+		_ = filepath.WalkDir(directory, func(path string, entry os.DirEntry, err error) error {
+			if err != nil || entry.IsDir() || !isCertificateFileName(path) {
+				return nil
+			}
+			if err := appendRootCAFile(roots, path); err != nil {
+				log.Warn("load certificates from ", path, ": ", err)
+			}
+			return nil
+		})
+	}
+
+	if roots.pem.Len() == 0 {
+		return E.New("no certificate found")
+	}
+	return nil
+}
+
+func appendRootCAFile(roots *Bundle, path string) error {
+	content, err := os.ReadFile(path)
+	if err != nil {
+		return err
+	}
+	return roots.Append(content)
+}
+
+func isCertificateFileName(path string) bool {
+	certFileExtensions := []string{".crt", ".pem"}
+	return common.Any(certFileExtensions, func(it string) bool {
+		return strings.HasSuffix(path, it)
+	})
+}
+
+// distrustDirectory reads certificate contents, not hash-based filenames.
+// Two different certificates can have the same subject hash.
+func distrustDirectory(roots *Bundle, directory string) error {
+	return filepath.WalkDir(directory, func(path string, entry os.DirEntry, err error) error {
+		if os.IsNotExist(err) {
+			return nil
+		}
+		if err != nil {
+			return err
+		}
+		if entry.IsDir() {
+			return nil
+		}
+		content, err := os.ReadFile(path)
+		if err != nil {
+			return err
+		}
+		return roots.distrust(content)
+	})
+}

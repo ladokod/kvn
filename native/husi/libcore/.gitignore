@@ -1,0 +1,6 @@
+binary*.go
+*.[a|j]ar
+.idea
+.vscode
+*.pem
+!rootcerts/testdata/*.pem

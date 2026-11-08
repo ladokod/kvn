@@ -1,0 +1,292 @@
+//go:build android
+
+package libcore
+
+import (
+	"context"
+	"net/netip"
+	"os"
+	"sync"
+
+	"github.com/sagernet/sing-box/adapter"
+	C "github.com/sagernet/sing-box/constant"
+	"github.com/sagernet/sing-box/option"
+	"github.com/sagernet/sing-tun"
+	"github.com/sagernet/sing/common"
+	"github.com/sagernet/sing/common/control"
+	E "github.com/sagernet/sing/common/exceptions"
+	"github.com/sagernet/sing/common/logger"
+
+	"github.com/xchacha20-poly1305/husi/libcore/v2/oscall"
+)
+
+type boxPlatformInterfaceWrapper struct {
+	iif                    PlatformInterface
+	networkManager         adapter.NetworkManager
+	myTunName              string
+	myTunAddress           []netip.Addr
+	defaultInterfaceAccess sync.Mutex
+	defaultInterface       *control.Interface
+	forTest                bool
+
+	// Set by interface monitor, which can't provide these information on Android.
+	/*isExpensive            bool
+	isConstrained          bool*/
+}
+
+var _ adapter.PlatformInterface = (*boxPlatformInterfaceWrapper)(nil)
+
+func (w *boxPlatformInterfaceWrapper) Initialize(networkManager adapter.NetworkManager) error {
+	w.networkManager = networkManager
+	return nil
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformAutoDetectInterfaceControl() bool {
+	return true
+}
+
+func (w *boxPlatformInterfaceWrapper) AutoDetectInterfaceControl(fd int) error {
+	if !w.iif.AutoDetectInterfaceControl(int32(fd)) {
+		return E.New("Android socket protection failed")
+	}
+	return nil
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformInterface() bool {
+	return true
+}
+
+func (w *boxPlatformInterfaceWrapper) OpenInterface(options *tun.Options, platformOptions option.TunPlatformOptions) (tun.Tun, error) {
+	if len(options.IncludeUID) > 0 || len(options.ExcludeUID) > 0 {
+		return nil, E.New("android: unsupported uid options")
+	}
+	if len(options.IncludeAndroidUser) > 0 {
+		return nil, E.New("android: unsupported android_user option")
+	}
+	tunFd, err := w.iif.OpenTun()
+	if err != nil {
+		return nil, E.Cause(err, "iif.OpenTun")
+	}
+	options.Name, err = tunnelName(tunFd)
+	if err != nil {
+		return nil, E.Cause(err, "tunnelName")
+	}
+	options.InterfaceMonitor.RegisterMyInterface(options.Name)
+	dupFd, err := oscall.Dup(int(tunFd))
+	if err != nil {
+		return nil, E.Cause(err, "oscall.Dup")
+	}
+	options.FileDescriptor = dupFd
+	w.myTunName = options.Name
+	w.myTunAddress = myTunAddress(options)
+	return tun.New(*options)
+}
+
+func myTunAddress(options *tun.Options) []netip.Addr {
+	addresses := make([]netip.Addr, 0, len(options.Inet4Address)+len(options.Inet6Address))
+	for _, prefix := range options.Inet4Address {
+		addresses = append(addresses, prefix.Addr())
+	}
+	for _, prefix := range options.Inet6Address {
+		addresses = append(addresses, prefix.Addr())
+	}
+	return addresses
+}
+
+func (w *boxPlatformInterfaceWrapper) MyInterfaceAddress() []netip.Addr {
+	return w.myTunAddress
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformDefaultInterfaceMonitor() bool {
+	return true
+}
+
+func (w *boxPlatformInterfaceWrapper) CreateDefaultInterfaceMonitor(logger logger.Logger) tun.DefaultInterfaceMonitor {
+	return &interfaceMonitor{
+		boxPlatformInterfaceWrapper: w,
+		logger:                      logger,
+	}
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformNetworkInterfaces() bool {
+	return true
+}
+
+func (w *boxPlatformInterfaceWrapper) NetworkInterfaces() ([]adapter.NetworkInterface, error) {
+	interfaceIterator, err := w.iif.GetInterfaces()
+	if err != nil {
+		return nil, err
+	}
+	interfaces := make([]adapter.NetworkInterface, 0, interfaceIterator.Length())
+	for interfaceIterator.HasNext() {
+		netInterface := interfaceIterator.Next()
+		// w.defaultInterfaceAccess.Lock()
+		// isDefault := w.defaultInterface != nil && int(netInterface.Index) == w.defaultInterface.Index
+		// w.defaultInterfaceAccess.Unlock()
+		interfaces = append(interfaces, adapter.NetworkInterface{
+			Index:            int(netInterface.Index),
+			MTU:              int(netInterface.MTU),
+			Name:             netInterface.Name,
+			Addresses:        common.Map(iteratorToArray[string](netInterface.Addresses), netip.MustParsePrefix),
+			Flags:            linkFlags(uint32(netInterface.Flags)),
+			Type:             C.InterfaceType(netInterface.Type),
+			DNSServers:       iteratorToArray[string](netInterface.DNSServer),
+			DNSSearchDomains: iteratorToArray[string](netInterface.DNSSearchDomain),
+			Expensive:        netInterface.Metered, /*|| isDefault && w.isExpensive*/
+			Constrained:      false,                // Not for Android
+		})
+	}
+	interfaces = common.UniqBy(interfaces, func(it adapter.NetworkInterface) string {
+		return it.Name
+	})
+	return interfaces, nil
+}
+
+func (w *boxPlatformInterfaceWrapper) RequestPermissionForWIFIState() error {
+	// Even not be implemented or invoked in sing-box
+	return nil
+}
+
+type WIFIState interface {
+	GetSSID() string
+	GetBSSID() string
+}
+
+func (w *boxPlatformInterfaceWrapper) ReadWIFIState(ctx context.Context) adapter.WIFIState {
+	wifiState := w.iif.ReadWIFIState()
+	if wifiState == nil {
+		return adapter.WIFIState{}
+	}
+	return adapter.WIFIState{
+		SSID:  wifiState.GetSSID(),
+		BSSID: wifiState.GetBSSID(),
+	}
+}
+
+// Process Searcher
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformConnectionOwnerFinder() bool {
+	return true
+}
+
+type ConnectionOwner struct {
+	UserId              int32
+	androidPackageNames []string
+}
+
+func NewConnectionOwner(userId int32, androidPackageNames StringIterator) *ConnectionOwner {
+	return &ConnectionOwner{
+		UserId:              userId,
+		androidPackageNames: iteratorToArray(androidPackageNames),
+	}
+}
+
+func (w *boxPlatformInterfaceWrapper) FindConnectionOwner(request *adapter.FindConnectionOwnerRequest) (*adapter.ConnectionOwner, error) {
+	result, err := w.iif.FindConnectionOwner(request.IpProtocol, request.SourceAddress, request.SourcePort, request.DestinationAddress, request.DestinationPort)
+	if err != nil {
+		return nil, err
+	}
+	return &adapter.ConnectionOwner{
+		UserId:       result.UserId,
+		PackageNames: result.androidPackageNames,
+		// ProcessPaths: not available in Android.
+	}, nil
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformWIFIMonitor() bool {
+	return true
+}
+
+func (w *boxPlatformInterfaceWrapper) TailscaleHostname() string {
+	return w.iif.TailscaleHostname()
+}
+
+// Android not using
+
+func (w *boxPlatformInterfaceWrapper) UnderNetworkExtension() bool {
+	return false
+}
+
+func (w *boxPlatformInterfaceWrapper) NetworkExtensionIncludeAllNetworks() bool {
+	// https://sing-box.sagernet.org/manual/misc/tunnelvision/#android
+	return false
+}
+
+func (w *boxPlatformInterfaceWrapper) ClearDNSCache() {
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformNotification() bool {
+	return false
+}
+
+func (w *boxPlatformInterfaceWrapper) SendNotification(_ *adapter.Notification) error {
+	return nil
+}
+
+func (w *boxPlatformInterfaceWrapper) CancelNotification(identifier string, typeID int32) error {
+	return nil
+}
+
+func (w *boxPlatformInterfaceWrapper) SystemCertificates() []string {
+	// Already set in certs.go
+	return nil
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformNeighborResolver() bool {
+	// Require root in Android
+	return false
+}
+
+func (w *boxPlatformInterfaceWrapper) StartNeighborMonitor(listener adapter.NeighborUpdateListener) error {
+	return os.ErrInvalid
+}
+
+func (w *boxPlatformInterfaceWrapper) ProcessPlatformOptions(options option.TunPlatformOptions) error {
+	return nil
+}
+
+func (w *boxPlatformInterfaceWrapper) CloseNeighborMonitor(listener adapter.NeighborUpdateListener) error {
+	return os.ErrInvalid
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformBridge() bool {
+	return false
+}
+
+func (w *boxPlatformInterfaceWrapper) CreateBridge(options adapter.BridgeOptions) (adapter.BridgeSession, error) {
+	return nil, os.ErrInvalid
+}
+
+// Unused Tailscale (root required)
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformShell() bool {
+	return false
+}
+
+func (w *boxPlatformInterfaceWrapper) CheckPlatformShell() error {
+	return os.ErrInvalid
+}
+
+func (w *boxPlatformInterfaceWrapper) OpenShellSession(user *adapter.PlatformUser, command string, env []string, term string, rows int32, cols int32) (adapter.ShellSession, error) {
+	return nil, os.ErrInvalid
+}
+
+func (w *boxPlatformInterfaceWrapper) LookupUser(username string) (*adapter.PlatformUser, error) {
+	return nil, os.ErrInvalid
+}
+
+func (w *boxPlatformInterfaceWrapper) LookupSFTPServer() (string, error) {
+	return "", os.ErrInvalid
+}
+
+func (w *boxPlatformInterfaceWrapper) ReadSystemSSHHostKey() ([]byte, error) {
+	return nil, os.ErrInvalid
+}
+
+func (w *boxPlatformInterfaceWrapper) UsePlatformAutoRedirect() bool {
+	return false
+}
+
+func (w *boxPlatformInterfaceWrapper) CreateAutoRedirect(options adapter.AutoRedirectOptions) (adapter.AutoRedirectSession, error) {
+	return nil, os.ErrInvalid
+}

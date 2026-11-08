@@ -1,0 +1,146 @@
+# Public CI: builds and tests only. Releases require a separately reviewed signing workflow.
+name: KVN Android build and tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+    paths-ignore: ['docs/**', 'README.md']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - abi: arm64-v8a
+            go-target: android/arm64
+          - abi: x86_64
+            go-target: android/amd64
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.27.0'
+          cache-dependency-path: native/husi/libcore/go.sum
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: '13114758'
+          packages: 'platform-tools'
+      - run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0' 'ndk;29.0.14206865'
+      - name: Cache core built from this exact source set
+        id: core-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            native/husi/libcore/libcore.aar
+            native/husi/libcore/libcore.aar.sha256
+          key: core-${{ runner.os }}-go1.27.0-ndk29-${{ matrix.abi }}-${{ hashFiles('native/husi/**', 'scripts/build-core.sh') }}
+      - name: Build pinned Go core
+        if: steps.core-cache.outputs.cache-hit != 'true'
+        run: KVN_CORE_TARGET=${{ matrix.go-target }} ANDROID_NDK_HOME="$ANDROID_HOME/ndk/29.0.14206865" scripts/build-core.sh
+      - name: Verify native artifact checksum
+        working-directory: native/husi/libcore
+        run: sha256sum --check libcore.aar.sha256
+      - name: Save successfully built core for later Android fixes
+        if: steps.core-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            native/husi/libcore/libcore.aar
+            native/husi/libcore/libcore.aar.sha256
+          key: ${{ steps.core-cache.outputs.cache-primary-key }}
+      - name: Go unit tests
+        working-directory: native/husi/libcore
+        run: go test ./simpleproxyurl ./httpfetch ./pluginpool ./oscall
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.13'
+      - run: gradle -PkvnTestAbi=${{ matrix.abi }} :app:testDebugUnitTest :app:assembleDebug :app:assembleDebugAndroidTest :app:assembleRelease :probe:testDebugUnitTest :probe:assembleDebug --no-daemon
+      - name: Install fixture TLS tooling
+        if: matrix.abi == 'x86_64'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends openssl
+      - name: Verify release APK signature and provenance
+        run: |
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs app/build/outputs/apk/release/app-release.apk
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump badging app/build/outputs/apk/release/app-release.apk > release-badging.txt
+          "$ANDROID_HOME/build-tools/35.0.0/aapt" dump xmltree app/build/outputs/apk/release/app-release.apk AndroidManifest.xml > release-manifest.txt
+          python3 -c 'from pathlib import Path; b=Path("release-badging.txt").read_text(); assert "application-debuggable" not in b; assert "AuditVpnService" not in Path("release-manifest.txt").read_text(); assert "0.2.0" in b'
+          sha256sum app/build/outputs/apk/release/app-release.apk > release-apk.sha256
+          python3 -c 'import json,os; json.dump({"version":"0.2.0","source_commit":os.environ["GITHUB_SHA"],"abi":"${{ matrix.abi }}"},open("build-info.json","w"),indent=2)'
+      - name: Build isolated Naive HTTP2 reference server
+        if: matrix.abi == 'x86_64'
+        run: tools/prepare-fixture.sh "$RUNNER_TEMP/kvn-fixture-bin"
+      - name: Reclaim native build tools before emulator
+        if: matrix.abi == 'x86_64'
+        shell: python
+        run: |
+          import os, pathlib, shutil, subprocess
+          ndk = pathlib.Path(os.environ['ANDROID_HOME']) / 'ndk' / '29.0.14206865'
+          if ndk.exists():
+              assert '29.0.14206865' in (ndk / 'source.properties').read_text()
+              shutil.rmtree(ndk)
+          subprocess.run(['go', 'clean', '-cache'], check=True)
+          print('Native compilation complete; reclaimed NDK and compiled Go cache space')
+      - name: Enable KVM for emulator
+        if: matrix.abi == 'x86_64'
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Device tests (no real server credentials)
+        if: matrix.abi == 'x86_64'
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 36
+          arch: x86_64
+          disk-size: 2048M
+          emulator-boot-timeout: 600
+          script: bash tools/run-device-tests.sh "$RUNNER_TEMP/kvn-fixture-bin/sing-box"
+      - name: Preserve test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KVN-test-reports-${{ matrix.abi }}
+          path: |
+            app/build/reports/
+            app/build/outputs/androidTest-results/
+          if-no-files-found: ignore
+      - name: Record resolved Android runtime dependencies
+        run: |
+          mkdir -p dependency-sources
+          gradle :app:collectRuntimeNotices --no-daemon
+          gradle :app:dependencies --configuration debugRuntimeClasspath --console=plain --no-daemon > dependency-sources/android-runtime-dependencies.txt
+      - name: Collect dependency notices before APK distribution
+        run: |
+          python3 scripts/collect-licenses.py
+          scripts/archive-cronet-source.sh
+      - name: Archive corresponding KVN sources
+        run: git archive --format=tar.gz --output=KVN-corresponding-source.tar.gz HEAD
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KVN-0.2.0-${{ matrix.abi }}
+          path: |
+            app/build/outputs/apk/release/*.apk
+            release-apk.sha256
+            build-info.json
+            release-badging.txt
+            release-manifest.txt
+            app/build/reports/tests/
+            native/husi/libcore/libcore.aar.sha256
+            KVN-corresponding-source.tar.gz
+            app/src/main/assets/licenses/
+            dependency-sources/
+          if-no-files-found: error

@@ -1,0 +1,334 @@
+syntax = "proto3";
+
+package husi.v1;
+
+import "daemon/started_service.proto";
+import "husi/v1/core.proto";
+import "husi/v1/daemon.proto";
+
+option go_package = "libcore/pb/husi/v1;husiv1";
+option java_multiple_files = true;
+option java_outer_classname = "ApplicationProto";
+option java_package = "fr.husi.proto.v1";
+
+// ApplicationService covers work that needs no running instance but does need
+// the protocol registry of the host that will run the config. Evaluating these
+// inside the UI would answer for the UI's registry, which is deliberately
+// slimmer than the core host's.
+//
+// sing-box's desktop.ApplicationService answers the same kind of question, but
+// its generated Go lives in a main package that nothing can import, and husi's
+// schema generation is driven by husi's own option codegen. So this one is
+// husi's, unlike the core-scoped contract shared with sing-box verbatim.
+//
+// Network tools (GetCert, the standalone tests) execute in the core host so
+// they share the host's protocol registry, socks path and cancellation model —
+// same placement as StandaloneURLTest (D6).
+//
+// HTTPFetch is the desktop half of the HTTP client husi uses for its own
+// downloads (subscriptions, rule sets, app updates); Android calls the same Go
+// code in-process through the libcore binding. It runs here so the desktop UI
+// needs no Go runtime of its own.
+//
+// The WebDAV RPCs keep backups in a remote directory. File contents travel in
+// chunks, so a backup of any size stays below gRPC's message limit.
+//
+// Ping, MatchRuleSets and GetRootCertificates answer for the UI what it cannot
+// compute without Go: an ICMP socket (and on Android, a socket protected from
+// the VPN), sing-box's rule-set matcher, and the root bundles embedded in
+// sing-box. Rule sets are named by directory: the core already reads the same
+// directories for the rule sets of a running service.
+//
+// The standalone STUN and network quality tests are the no-running-service half
+// of sing-box's pair: with a service started the UI calls
+// daemon.StartedService, which routes through a chosen outbound; with none it
+// calls these, which dial directly. Request shapes and progress messages are
+// sing-box's own, so the two halves differ only in where the dialer comes from.
+service ApplicationService {
+  rpc CheckConfig(CheckConfigRequest) returns (CheckConfigResponse);
+  rpc FormatConfig(FormatConfigRequest) returns (FormatConfigResponse);
+  rpc GenerateSchema(GenerateSchemaRequest) returns (GenerateSchemaResponse);
+  rpc StandaloneURLTest(StandaloneURLTestRequest) returns (StandaloneURLTestResponse);
+  rpc GetCert(GetCertRequest) returns (GetCertResponse);
+  rpc StandaloneSTUNTest(StandaloneSTUNTestRequest) returns (stream daemon.STUNTestProgress);
+  rpc StandaloneNetworkQualityTest(StandaloneNetworkQualityTestRequest) returns (stream daemon.NetworkQualityTestProgress);
+  rpc HTTPFetch(HTTPFetchRequest) returns (stream HTTPFetchResponse);
+  rpc WebDAVList(WebDAVListRequest) returns (WebDAVListResponse);
+  rpc WebDAVUpload(stream WebDAVUploadRequest) returns (WebDAVUploadResponse);
+  rpc WebDAVDownload(WebDAVDownloadRequest) returns (stream WebDAVDownloadResponse);
+  rpc WebDAVDelete(WebDAVDeleteRequest) returns (WebDAVDeleteResponse);
+  rpc Ping(PingRequest) returns (PingResponse);
+  rpc LookupIPCountry(LookupIPCountryRequest) returns (LookupIPCountryResponse);
+  rpc MatchRuleSets(MatchRuleSetsRequest) returns (MatchRuleSetsResponse);
+  rpc GetRootCertificates(GetRootCertificatesRequest) returns (GetRootCertificatesResponse);
+  // Android only; other platforms answer UNIMPLEMENTED.
+  rpc ReadAndroidVPNType(ReadAndroidVPNTypeRequest) returns (ReadAndroidVPNTypeResponse);
+}
+
+message CheckConfigRequest {
+  string config = 1;
+}
+
+// An unusable config is reported as an INVALID_ARGUMENT error carrying the
+// parser message, so a successful response has nothing left to say.
+message CheckConfigResponse {}
+
+message FormatConfigRequest {
+  string config = 1;
+}
+
+// Malformed JSON is reported as an INVALID_ARGUMENT error carrying the parser
+// message.
+message FormatConfigResponse {
+  // config re-indented in sing-box style, comments preserved.
+  string config = 1;
+}
+
+enum SchemaKind {
+  SCHEMA_KIND_UNSPECIFIED = 0;
+  SCHEMA_KIND_CONFIG = 1;
+  SCHEMA_KIND_OUTBOUND = 2;
+  SCHEMA_KIND_DNS_RULE = 3;
+}
+
+message GenerateSchemaRequest {
+  SchemaKind kind = 1;
+}
+
+message GenerateSchemaResponse {
+  // JSON Schema document.
+  string schema = 1;
+}
+
+// StandaloneURLTest starts a throwaway instance from config, tests through it
+// and closes it, leaving any running service untouched.
+message StandaloneURLTestRequest {
+  string config = 1;
+  // Empty selects the default outbound of the throwaway instance.
+  string outbound_tag = 2;
+  // Empty selects the host default test URL.
+  string link = 3;
+  int32 timeout_ms = 4;
+  URLTestOptions options = 5;
+  // Spawned by the host for the duration of the test, same rules and trust
+  // model as StartServiceRequest.plugins.
+  repeated PluginProcessSpec plugins = 6;
+}
+
+message StandaloneURLTestResponse {
+  int32 latency_ms = 1;
+}
+
+// Mode for GetCert: TLS via HTTPS or QUIC.
+enum GetCertMode {
+  GET_CERT_MODE_UNSPECIFIED = 0;
+  GET_CERT_MODE_HTTPS = 1;
+  GET_CERT_MODE_QUIC = 2;
+}
+
+message GetCertRequest {
+  // host:port of the peer; port defaults to 443 on the host when empty.
+  string server = 1;
+  // SNI; empty means the server address itself.
+  string server_name = 2;
+  GetCertMode mode = 3;
+  // Optional socks proxy URL (socks5://…); empty dials directly.
+  string socks_proxy_url = 4;
+}
+
+message GetCertResponse {
+  // PEM-encoded certificate chain.
+  string pem = 1;
+}
+
+// Same fields as sing-box desktop.StandaloneSTUNTestRequest. There is no
+// outbound tag: with no service running there is nothing to route through.
+message StandaloneSTUNTestRequest {
+  // Empty selects sing-box's default STUN server.
+  string server = 1;
+}
+
+// Same fields as sing-box desktop.StandaloneNetworkQualityTestRequest.
+message StandaloneNetworkQualityTestRequest {
+  // Empty selects sing-box's default responsiveness config URL.
+  string config_url = 1;
+  // Measure download and upload one after the other instead of together.
+  bool serial = 2;
+  int32 max_runtime_seconds = 3;
+  bool http3 = 4;
+}
+
+// Socks inbound on the host's loopback that HTTPFetch dials through.
+message HTTPFetchSocks5 {
+  int32 port = 1;
+  string username = 2;
+  string password = 3;
+}
+
+// One GET. A status other than 200 fails the call with the start of the body
+// in the error message.
+message HTTPFetchRequest {
+  string url = 1;
+  map<string, string> headers = 2;
+  // Leaves the exchange without an overall deadline, for large downloads on
+  // slow links. Connection setup still times out, and a body that stops making
+  // progress still fails.
+  bool no_overall_deadline = 3;
+  // Forces TLS 1.3.
+  bool restricted_tls = 4;
+  // Hex SHA-256 of a leaf certificate accepted even when it does not chain to
+  // a trusted root (OOCv1).
+  string pinned_sha256 = 5;
+  // Unset dials the server directly.
+  HTTPFetchSocks5 socks5 = 6;
+  // age identities that decrypt an armored response body.
+  string age_identities = 7;
+}
+
+message HTTPFetchHead {
+  // First value of each response header, keyed by canonical header name.
+  map<string, string> headers = 1;
+  // Length of the body that follows, or -1 when unknown.
+  int64 content_length = 2;
+}
+
+// The stream carries one head, then the body in chunks.
+message HTTPFetchResponse {
+  oneof payload {
+    HTTPFetchHead head = 1;
+    bytes chunk = 2;
+  }
+}
+
+message WebDAVServer {
+  // The directory that holds the files.
+  string url = 1;
+  string username = 2;
+  string password = 3;
+  // Unset dials the server directly.
+  HTTPFetchSocks5 socks5 = 4;
+}
+
+message WebDAVListRequest {
+  WebDAVServer server = 1;
+}
+
+// One file of the directory; subdirectories are not listed.
+message WebDAVEntry {
+  string name = 1;
+  int64 size = 2;
+  int64 modified_unix_ms = 3;
+}
+
+message WebDAVListResponse {
+  repeated WebDAVEntry entries = 1;
+}
+
+// Names the file the chunks that follow it are stored as. A file of the same
+// name is replaced. A missing directory is created, but not its parents. A name
+// that is empty or would leave the directory is an INVALID_ARGUMENT error.
+message WebDAVUploadHead {
+  WebDAVServer server = 1;
+  string name = 2;
+  // Total length of the chunks, sent to the server as the Content-Length.
+  int64 size = 3;
+}
+
+// The stream carries one head, then the file in chunks.
+message WebDAVUploadRequest {
+  oneof payload {
+    WebDAVUploadHead head = 1;
+    bytes chunk = 2;
+  }
+}
+
+message WebDAVUploadResponse {}
+
+message WebDAVDownloadRequest {
+  WebDAVServer server = 1;
+  string name = 2;
+}
+
+// The stream carries the file in chunks.
+message WebDAVDownloadResponse {
+  bytes chunk = 1;
+}
+
+// A name that is empty or would leave the directory is an INVALID_ARGUMENT
+// error.
+message WebDAVDeleteRequest {
+  WebDAVServer server = 1;
+  string name = 2;
+}
+
+message WebDAVDeleteResponse {}
+
+enum PingProtocol {
+  PING_PROTOCOL_UNSPECIFIED = 0;
+  PING_PROTOCOL_ICMP = 1;
+  PING_PROTOCOL_TCP = 2;
+}
+
+message PingRequest {
+  PingProtocol protocol = 1;
+  // IP address or domain name.
+  string address = 2;
+  // Ignored by ICMP.
+  uint32 port = 3;
+  int32 timeout_ms = 4;
+}
+
+message PingResponse {
+  int32 latency_ms = 1;
+}
+
+message MatchRuleSetsRequest {
+  // Domain name or IP address to match.
+  string keyword = 1;
+  // Directory searched recursively for binary (.srs) rule sets.
+  string directory = 2;
+}
+
+message MatchRuleSetsResponse {
+  // File names of the rule sets that have a rule matching the keyword.
+  // Unreadable files are skipped, and a missing directory reports nothing.
+  repeated string names = 1;
+}
+
+message GetRootCertificatesRequest {
+  RootCertificateStore store = 1;
+}
+
+message GetRootCertificatesResponse {
+  // The roots of the store as PEM, falling back to Mozilla's bundle when the
+  // store cannot be read.
+  string pem = 1;
+}
+
+message ReadAndroidVPNTypeRequest {
+  // The base and split APKs of one package, tried in order.
+  repeated string apk_paths = 1;
+}
+
+// The Go core another VPN app embeds, read from the Go build info of its
+// native libraries.
+message AndroidVPNType {
+  string core_type = 1;
+  string core_path = 2;
+  string go_version = 3;
+}
+
+message ReadAndroidVPNTypeResponse {
+  // Unset when no APK has a native library that reveals its core.
+  AndroidVPNType type = 1;
+}
+
+// The first country rule set matching the IP in the host bundled GeoIP pack.
+message LookupIPCountryRequest {
+  string ip = 1;
+  string directory = 2;
+}
+
+message LookupIPCountryResponse {
+  string country_code = 1;
+}

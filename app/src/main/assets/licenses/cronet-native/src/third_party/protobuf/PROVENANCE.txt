@@ -1,0 +1,5 @@
+The vendored NaiveProxy tree omits protobuf's top-level LICENSE but its source
+headers reference the Google BSD license and preserve Copyright 2008 Google Inc.
+common.h at be1be963 defines GOOGLE_PROTOBUF_VERSION 7035001 (C++ 7.35.1).
+License text retrieved from https://github.com/protocolbuffers/protobuf/blob/v35.1/LICENSE.
+The exact NaiveProxy source tree is included in the distribution source bundle.

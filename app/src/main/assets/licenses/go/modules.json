@@ -1,0 +1,3635 @@
+[
+  {
+    "Path": "github.com/xchacha20-poly1305/husi/libcore/v2",
+    "Main": true,
+    "GoVersion": "1.27"
+  },
+  {
+    "Path": "bitbucket.org/creachadair/shell",
+    "Version": "v0.0.8",
+    "Time": "2023-12-20T01:32:19Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "c2sp.org/CCTV/age",
+    "Version": "v0.0.0-20260829155415-4448f2097b2d",
+    "Time": "2026-08-29T15:54:15Z",
+    "Indirect": true,
+    "GoVersion": "1.24rc2",
+    "Sum": "h1:Blprhc2SbChNZtWcU+BLTM4YdoqYAS9V7cJgOwJKyAs=",
+    "GoModSum": "h1:SrHC2C7r5GkDk8R+NFVzYy/sdj0Ypg9htaPXQq5Cqeo=",
+    "collected_notices": []
+  },
+  {
+    "Path": "cel.dev/expr",
+    "Version": "v0.25.2",
+    "Time": "2026-03-12T16:46:44Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "cloud.google.com/go",
+    "Version": "v0.26.0",
+    "Time": "2018-08-07T10:25:35Z",
+    "Indirect": true,
+    "GoModSum": "h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=",
+    "collected_notices": []
+  },
+  {
+    "Path": "cloud.google.com/go/auth",
+    "Version": "v0.18.2",
+    "Time": "2026-02-13T17:14:27Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "cloud.google.com/go/auth/oauth2adapt",
+    "Version": "v0.2.7",
+    "Time": "2025-01-09T15:02:14Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "cloud.google.com/go/compute/metadata",
+    "Version": "v0.9.0",
+    "Time": "2025-09-24T19:41:55Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "cloud.google.com/go/monitoring",
+    "Version": "v1.24.0",
+    "Time": "2025-02-05T21:01:03Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "cloud.google.com/go/trace",
+    "Version": "v1.11.3",
+    "Time": "2025-01-02T19:03:39Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "code.pfad.fr/check",
+    "Version": "v1.1.0",
+    "Time": "2025-07-06T19:35:22Z",
+    "Indirect": true,
+    "GoVersion": "1.21",
+    "Sum": "h1:GWvjdzhSEgHvEHe2uJujDcpmZoySKuHQNrZMfzfO0bE=",
+    "GoModSum": "h1:NiUH13DtYsb7xp5wll0U4SXx7KhXQVCtRgdC96IPfoM=",
+    "collected_notices": []
+  },
+  {
+    "Path": "contrib.go.opencensus.io/exporter/stackdriver",
+    "Version": "v0.13.14",
+    "Time": "2022-09-14T19:28:37Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "filippo.io/age",
+    "Version": "v1.3.2",
+    "Time": "2026-08-29T17:40:19Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:r6RSZLFSMm6rzKepZ7ZAYkKCu14f3/Me8c7uKYh7C8c=",
+    "GoModSum": "h1:TH/Yr2sSRhCKbaH4XPxpUV0Us8Gv6txYUpiZQWz8Evk=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "filippo.io/edwards25519",
+    "Version": "v1.2.0",
+    "Time": "2026-02-17T17:23:26Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:crnVqOiS4jqYleHd9vaKZ+HKtHfllngJIiOpNpoJsjo=",
+    "GoModSum": "h1:xzAOLCNug/yB62zG1bQ8uziwrIqIuxhctzJT18Q77mc=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "filippo.io/hpke",
+    "Version": "v0.4.0",
+    "Time": "2025-12-05T14:43:42Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:p575VVQ6ted4pL+it6M00V/f2qTZITO0zgmdKCkd5+A=",
+    "GoModSum": "h1:EmAN849/P3qdeK+PCMkDpDm83vRHM5cDipBJ8xbQLVY=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "filippo.io/nistec",
+    "Version": "v0.0.4",
+    "Time": "2025-09-29T10:22:37Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "fyne.io/systray",
+    "Version": "v1.11.1-0.20250812065214-4856ac3adc3c",
+    "Time": "2025-08-12T06:52:14Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/BurntSushi/toml",
+    "Version": "v1.4.1-0.20240526193622-a339e1f7089c",
+    "Time": "2024-05-26T19:36:22Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/DATA-DOG/go-sqlmock",
+    "Version": "v1.5.2",
+    "Time": "2024-01-06T21:33:25Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/GoogleCloudPlatform/opentelemetry-operations-go/detectors/gcp",
+    "Version": "v1.33.0",
+    "Time": "2026-06-04T20:21:43Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/Kodeworks/golang-image-ico",
+    "Version": "v0.0.0-20141118225523-73f0f4cfade9",
+    "Time": "2014-11-18T22:55:23Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/RyuaNerin/elliptic2",
+    "Version": "v1.0.0",
+    "Time": "2023-08-08T01:27:15Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/RyuaNerin/go-krypto",
+    "Version": "v1.3.0",
+    "Time": "2024-08-17T15:24:22Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:smavTzSMAx8iuVlGb4pEwl9MD2qicqMzuXR2QWp2/Pg=",
+    "GoModSum": "h1:9R9TU936laAIqAmjcHo/LsaXYOZlymudOAxjaBf62UM=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/RyuaNerin/testingutil",
+    "Version": "v0.1.0",
+    "Time": "2024-01-01T11:18:12Z",
+    "Indirect": true,
+    "GoVersion": "1.15",
+    "Sum": "h1:IYT6JL57RV3U2ml3dLHZsVtPOP6yNK7WUVdzzlpNrss=",
+    "GoModSum": "h1:yTqj6Ta/ycHMPJHRyO12Mz3VrvTloWOsy23WOZH19AA=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/VividCortex/ewma",
+    "Version": "v1.2.0",
+    "Time": "2021-04-26T20:50:39Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/aclements/go-moremath",
+    "Version": "v0.0.0-20210112150236-f10218a38794",
+    "Time": "2021-01-12T15:02:36Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/ajg/form",
+    "Version": "v1.5.1",
+    "Time": "2019-03-18T23:49:58Z",
+    "Indirect": true,
+    "Sum": "h1:t9c7v8JUKu/XxOGBU0yjNpaMloxGEJhUkqFRq0ibGeU=",
+    "GoModSum": "h1:uL1WgH+h2mgNtvBq0339dVnzXdBETtL2LeUXaIv25UY=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/akutz/memconn",
+    "Version": "v0.1.0",
+    "Time": "2018-05-01T21:57:10Z",
+    "Indirect": true,
+    "Sum": "h1:NawI0TORU4hcOMsMr11g7vwlCdkYeLKXBcxWu2W/P8A=",
+    "GoModSum": "h1:Jo8rI7m0NieZyLI5e2CDlRdRqRRB4S7Xp77ukDjH+Fw=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/alexbrainman/sspi",
+    "Version": "v0.0.0-20231016080023-1a75b4708caa",
+    "Time": "2023-10-16T08:00:23Z",
+    "Indirect": true,
+    "GoVersion": "1.13",
+    "Sum": "h1:LHTHcTQiSGT7VVbI0o4wBRNQIgn917usHWOd6VAffYI=",
+    "GoModSum": "h1:cEWa1LVoE5KvSD9ONXsZrj0z6KqySlCCNKHlLzbqAt4=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/anchore/go-lzo",
+    "Version": "v0.1.0",
+    "Time": "2025-05-29T13:29:07Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:NgAacnzqPeGH49Ky19QKLBZEuFRqtTG9cdaucc3Vncs=",
+    "GoModSum": "h1:3kLx0bve2oN1iDwgM1U5zGku1Tfbdb0No5qp1eL1fIk=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/andybalholm/brotli",
+    "Version": "v1.2.4",
+    "Time": "2026-09-10T22:38:15Z",
+    "Indirect": true,
+    "GoVersion": "1.22",
+    "Sum": "h1:649LN6qF+/7JJYNN3Wdu4Dt5PS6eC/yP/Go3Bb0/AHI=",
+    "GoModSum": "h1:rzTDkvFWvIrjDXZHkuS16NPggd91W3kUSvPlQ1pLaKY=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/anmitsu/go-shlex",
+    "Version": "v0.0.0-20200514113438-38f4b401e2be",
+    "Time": "2020-05-14T11:34:38Z",
+    "Indirect": true,
+    "GoVersion": "1.13",
+    "Sum": "h1:9AeTilPcZAjCFIImctFaOjnTIavg87rW78vTPkQqLI8=",
+    "GoModSum": "h1:ySMOLuWl6zY27l47sB3qLNK6tF2fkHG55UZxx8oIVo4=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/anthropics/anthropic-sdk-go",
+    "Version": "v1.26.0",
+    "Time": "2026-02-19T22:43:49Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/atotto/clipboard",
+    "Version": "v0.1.4",
+    "Time": "2021-02-24T14:02:39Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/aws/aws-sdk-go",
+    "Version": "v1.55.5",
+    "Time": "2024-07-30T18:34:53Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/axiomhq/hyperloglog",
+    "Version": "v0.0.0-20240319100328-84253e514e02",
+    "Time": "2024-03-19T10:03:28Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/beorn7/perks",
+    "Version": "v1.0.1",
+    "Time": "2019-07-31T12:00:54Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/bgentry/speakeasy",
+    "Version": "v0.2.0",
+    "Time": "2022-09-10T01:20:23Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/bufbuild/protocompile",
+    "Version": "v0.14.1",
+    "Time": "2024-08-21T16:41:13Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/caddyserver/certmagic",
+    "Version": "v0.25.3-0.20260421143802-60d9d8b415d6",
+    "Time": "2026-04-21T14:38:02Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:LYSB6VgWzKtNrcxElw3c97BP40Oc7bizKxA9K1Vi/5k=",
+    "GoModSum": "h1:llW/CvsNmza8S6hmsuggsZeiX+uS27dkqY27wDIuBWg=",
+    "collected_notices": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "Path": "github.com/caddyserver/zerossl",
+    "Version": "v0.1.5",
+    "Time": "2026-02-16T15:01:48Z",
+    "Indirect": true,
+    "GoVersion": "1.21.0",
+    "Sum": "h1:dkvOjBAEEtY6LIGAHei7sw2UgqSD6TrWweXpV7lvEvE=",
+    "GoModSum": "h1:CxA0acn7oEGO6//4rtrRjYgEoa4MFw/XofZnrYwGqG4=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/cenkalti/backoff/v4",
+    "Version": "v4.3.0",
+    "Time": "2024-01-02T22:56:19Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/census-instrumentation/opencensus-proto",
+    "Version": "v0.4.1",
+    "Time": "2022-09-23T17:40:20Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/cespare/xxhash/v2",
+    "Version": "v2.3.0",
+    "Time": "2024-04-04T20:00:10Z",
+    "Indirect": true,
+    "GoVersion": "1.11",
+    "Sum": "h1:UL815xU9SqsFlibzuggzjXhog7bL6oX9BbNZnL2UFvs=",
+    "GoModSum": "h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/cheggaaa/pb/v3",
+    "Version": "v3.1.6",
+    "Time": "2025-01-21T09:10:56Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/cilium/ebpf",
+    "Version": "v0.16.0",
+    "Time": "2024-07-23T16:13:54Z",
+    "Indirect": true,
+    "GoVersion": "1.21",
+    "Sum": "h1:+BiEnHL6Z7lXnlGUsXQPPAE7+kenAd4ES8MQ5min0Ok=",
+    "GoModSum": "h1:L7u2Blt2jMM/vLAVgjxluxtBKlz3/GWjB0dMOEngfwE=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/client9/misspell",
+    "Version": "v0.3.4",
+    "Time": "2018-03-09T01:55:12Z",
+    "Indirect": true,
+    "GoModSum": "h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/clipperhouse/uax29/v2",
+    "Version": "v2.2.0",
+    "Time": "2025-09-14T14:56:38Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/cloudflare/circl",
+    "Version": "v1.3.7",
+    "Time": "2024-01-01T21:04:53Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/cncf/udpa/go",
+    "Version": "v0.0.0-20191209042840-269d4d468f6f",
+    "Time": "2019-12-09T04:28:40Z",
+    "Indirect": true,
+    "GoVersion": "1.13",
+    "GoModSum": "h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/cncf/xds/go",
+    "Version": "v0.0.0-20260202195803-dba9d589def2",
+    "Time": "2026-02-02T19:58:03Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/coder/websocket",
+    "Version": "v1.8.15",
+    "Time": "2026-06-15T03:25:28Z",
+    "GoVersion": "1.23",
+    "Sum": "h1:6B2JPeOGlpff2Uz6vOEH1Vzpi0iUz20A+lPVhPHtNUA=",
+    "GoModSum": "h1:NX3SzP+inril6yawo5CQXx8+fk145lPDC6pumgx0mVg=",
+    "collected_notices": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "Path": "github.com/coreos/go-iptables",
+    "Version": "v0.7.1-0.20240112124308-65c67c9f46e6",
+    "Time": "2024-01-12T12:43:08Z",
+    "Indirect": true,
+    "GoVersion": "1.16",
+    "Sum": "h1:8h5+bWd7R6AYUslN6c6iuZWTKsKxUFDlpnmilO6R2n0=",
+    "GoModSum": "h1:Qe8Bv2Xik5FyTXwgIbLAnv2sWSBmvWdFETJConOQ//Q=",
+    "collected_notices": [
+      "NOTICE",
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/coreos/go-oidc/v3",
+    "Version": "v3.17.0",
+    "Time": "2025-11-21T03:32:42Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/coreos/go-semver",
+    "Version": "v0.3.1",
+    "Time": "2023-01-16T22:04:39Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/coreos/go-systemd/v22",
+    "Version": "v22.5.0",
+    "Time": "2022-11-07T13:52:27Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/cpuguy83/go-md2man/v2",
+    "Version": "v2.0.6",
+    "Time": "2024-12-16T17:50:50Z",
+    "Indirect": true,
+    "GoVersion": "1.12",
+    "GoModSum": "h1:oOW0eioCTA6cOiMLiUPZOpcVxMig6NIQQ7OS05n1F4g=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/creachadair/taskgroup",
+    "Version": "v0.13.2",
+    "Time": "2024-11-22T01:51:00Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/creack/pty",
+    "Version": "v1.1.24",
+    "Time": "2024-10-31T18:56:50Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:bJrF4RRfyJnbTJqzRLHzcGaZK1NeM5kTC9jGgovnR1s=",
+    "GoModSum": "h1:08sCNb52WyoAwi2QDyzUCTgcvVFhUzewun7wtTfvcwE=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/cretz/bine",
+    "Version": "v0.2.0",
+    "Time": "2021-05-31T03:53:37Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/database64128/netx-go",
+    "Version": "v0.1.1",
+    "Time": "2025-08-25T09:17:57Z",
+    "Indirect": true,
+    "GoVersion": "1.23.0",
+    "Sum": "h1:dT5LG7Gs7zFZBthFBbzWE6K8wAHjSNAaK7wCYZT7NzM=",
+    "GoModSum": "h1:LNlYVipaYkQArRFDNNJ02VkNV+My9A5XR/IGS7sIBQc=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/database64128/tfo-go/v2",
+    "Version": "v2.3.2",
+    "Time": "2026-02-13T10:48:08Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:UhZMKiMq3swZGUiETkLBDzQnZBPSAeBMClpJGlnJ5Fw=",
+    "GoModSum": "h1:GC3uB5oa4beGpCUbRb2ZOWP73bJJFmMyAVgQSO7r724=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/davecgh/go-spew",
+    "Version": "v1.1.2-0.20180830191138-d8f796af33cc",
+    "Time": "2018-08-30T19:11:38Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/dblohm7/wingoes",
+    "Version": "v0.0.0-20240119213807-a09d6be7affa",
+    "Time": "2024-01-19T21:38:07Z",
+    "Indirect": true,
+    "GoVersion": "1.21",
+    "Sum": "h1:h8TfIT1xc8FWbwwpmHn1J5i43Y0uZP97GqasGCzSRJk=",
+    "GoModSum": "h1:Nx87SkVqTKd8UtT+xu7sM/l+LgXs6c0aHrlKusR+2EQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/dgrijalva/jwt-go/v4",
+    "Version": "v4.0.0-preview1",
+    "Time": "2020-01-07T01:22:05Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/dgryski/go-camellia",
+    "Version": "v0.0.0-20191119043421-69a8a13fb23d",
+    "Time": "2019-11-19T04:34:21Z",
+    "Indirect": true,
+    "Sum": "h1:CPqTNIigGweVPT4CYb+OO2E6XyRKFOmvTHwWRLgCAlE=",
+    "GoModSum": "h1:QX5ZVULjAfZJux/W62Y91HvCh9hyW6enAwcrrv/sLj0=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/dgryski/go-metro",
+    "Version": "v0.0.0-20180109044635-280f6062b5bc",
+    "Time": "2018-01-09T04:46:35Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/digitalocean/go-smbios",
+    "Version": "v0.0.0-20180907143718-390a4f403a8e",
+    "Time": "2018-09-07T14:37:18Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/djherbis/times",
+    "Version": "v1.6.0",
+    "Time": "2023-10-03T21:12:34Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/dustin/go-humanize",
+    "Version": "v1.0.1",
+    "Time": "2023-01-10T06:44:38Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/dvyukov/go-fuzz",
+    "Version": "v0.0.0-20210103155950-6a8e9d1f2415",
+    "Time": "2021-01-03T15:59:50Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/ebitengine/purego",
+    "Version": "v0.10.0",
+    "Time": "2026-02-23T08:46:21Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:QIw4xfpWT6GWTzaW5XEKy3HXoqrJGx1ijYHzTF0/ISU=",
+    "GoModSum": "h1:iIjxzd6CiRiOG0UyXP+V1+jWqUXVjPKLAI0mRfJZTmQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/envoyproxy/go-control-plane",
+    "Version": "v0.14.0",
+    "Time": "2025-11-04T22:01:44Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/envoyproxy/go-control-plane/envoy",
+    "Version": "v1.37.0",
+    "Time": "2026-01-13T06:26:49Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/envoyproxy/go-control-plane/ratelimit",
+    "Version": "v0.1.0",
+    "Time": "2024-12-23T15:25:59Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/envoyproxy/protoc-gen-validate",
+    "Version": "v1.3.3",
+    "Time": "2026-02-18T16:13:16Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/exclavenetwork/sing-juicity",
+    "Version": "v0.3.1",
+    "Time": "2026-09-28T13:21:51Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:0NXWxJwQZqyoeE9WOWj7YzJ6k0GEHOIcL8HnEX5exrg=",
+    "GoModSum": "h1:6ShPI5F5+2gTWqT3TJufV7/1zPOKx2M5yy7a5GGzfeE=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/fatih/color",
+    "Version": "v1.18.0",
+    "Time": "2024-10-03T07:06:28Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/felixge/httpsnoop",
+    "Version": "v1.0.4",
+    "Time": "2023-03-12T10:31:09Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/florianl/go-nfqueue/v2",
+    "Version": "v2.1.0",
+    "Time": "2026-06-27T07:51:42Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:Fywt30TY/evxyDySpXjxQ1jsRW7nQbLpOhELqpr4068=",
+    "GoModSum": "h1:8PKUM5rYoVFO5IZV1bifx4/b0jHAglKkHXr9PRwzi4Y=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/fogleman/gg",
+    "Version": "v1.3.0",
+    "Time": "2019-02-20T22:12:49Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/fsnotify/fsnotify",
+    "Version": "v1.9.0",
+    "Time": "2025-04-04T15:13:49Z",
+    "Indirect": true,
+    "GoVersion": "1.17",
+    "Sum": "h1:2Ml+OJNzbYCTzsxtv8vKSFD9PbJjmhYF14k/jKC7S9k=",
+    "GoModSum": "h1:8jBTzvmWwFyi3Pb8djgCCO5IBqzKJ/Jwo8TRcHyHii0=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/fullstorydev/grpcurl",
+    "Version": "v1.9.3",
+    "Time": "2025-02-19T16:36:35Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/fxamacker/cbor/v2",
+    "Version": "v2.9.0",
+    "Time": "2025-07-14T04:00:34Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:NpKPmjDBgUfBms6tr6JZkTHtfFGcMKsw3eGcmD/sapM=",
+    "GoModSum": "h1:vM4b+DJCtHn+zz7h3FFp/hDAI9WNWCsZj23V5ytsSxQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/gaissmai/bart",
+    "Version": "v0.26.1",
+    "Time": "2026-02-03T20:02:23Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:+w4rnLGNlA2GDVn382Tfe3jOsK5vOr5n4KmigJ9lbTo=",
+    "GoModSum": "h1:GREWQfTLRWz/c5FTOsIw+KkscuFkIV5t8Rp7Nd1Td5c=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/github/fakeca",
+    "Version": "v0.1.0",
+    "Time": "2020-08-11T20:29:26Z",
+    "Indirect": true,
+    "GoVersion": "1.12",
+    "Sum": "h1:Km/MVOFvclqxPM9dZBC4+QE564nU4gz4iZ0D9pMw28I=",
+    "GoModSum": "h1:+bormgoGMMuamOscx7N91aOuUST7wdaJ2rNjeohylyo=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/go-chi/chi/v5",
+    "Version": "v5.2.5",
+    "Time": "2026-02-05T11:05:34Z",
+    "Indirect": true,
+    "GoVersion": "1.22",
+    "Sum": "h1:Eg4myHZBjyvJmAFjFvWgrqDTXFyOzjj7YIm3L3mu6Ug=",
+    "GoModSum": "h1:X7Gx4mteadT3eDOMTsXzmI4/rwUpOwBHLpAfupzFJP0=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/go-chi/render",
+    "Version": "v1.0.3",
+    "Time": "2023-03-13T15:37:29Z",
+    "Indirect": true,
+    "GoVersion": "1.16",
+    "Sum": "h1:AsXqd2a1/INaIfUSKq3G5uA8weYx20FOsM7uSoCyyt4=",
+    "GoModSum": "h1:/gr3hVkmYR0YlEy3LxCuVRFzEu9Ruok+gFqbIofjao0=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/go-jose/go-jose/v4",
+    "Version": "v4.1.4",
+    "Time": "2026-03-31T23:33:50Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:moDMcTHmvE6Groj34emNPLs/qtYXRVcd6S7NHbHz3kA=",
+    "GoModSum": "h1:x4oUasVrzR7071A4TnHLGSPpNOm2a21K9Kf04k1rs08=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/go-logr/logr",
+    "Version": "v1.4.3",
+    "Time": "2025-05-19T04:56:57Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:CjnDlHq8ikf6E492q6eKboGOC0T8CDaOvkHCIg8idEI=",
+    "GoModSum": "h1:9T104GzyrTigFIr8wt5mBrctHMim0Nb2HLGrmQ40KvY=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/go-logr/stdr",
+    "Version": "v1.2.2",
+    "Time": "2021-12-14T08:00:35Z",
+    "Indirect": true,
+    "GoVersion": "1.16",
+    "Sum": "h1:hSWxHoqTgW2S2qGc0LTAI563KZ5YKYRhT3MFKZMbjag=",
+    "GoModSum": "h1:mMo/vtBO5dYbehREoey6XUKy/eSumjCCveDpRre4VKE=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/go-ole/go-ole",
+    "Version": "v1.3.0",
+    "Time": "2023-08-04T03:10:36Z",
+    "Indirect": true,
+    "GoVersion": "1.12",
+    "Sum": "h1:Dt6ye7+vXGIKZ7Xtk4s6/xVdGDQynvom7xCFEdWr6uE=",
+    "GoModSum": "h1:5LS6F96DhAwUc7C+1HLexzMXY1xGRSryjyPPKW6zv78=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/go-sql-driver/mysql",
+    "Version": "v1.9.2",
+    "Time": "2025-04-07T11:18:01Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/go4org/hashtriemap",
+    "Version": "v0.0.0-20251130024219-545ba229f689",
+    "Time": "2025-11-30T02:42:19Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/gobwas/httphead",
+    "Version": "v0.1.0",
+    "Time": "2020-12-08T10:25:04Z",
+    "Indirect": true,
+    "GoVersion": "1.15",
+    "Sum": "h1:exrUm0f4YX0L7EBwZHuCF4GDp8aJfVeBrlLQrs6NqWU=",
+    "GoModSum": "h1:O/RXo79gxV8G+RqlR/otEwx4Q36zl9rqC5u12GKvMCM=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/gobwas/pool",
+    "Version": "v0.2.1",
+    "Time": "2019-04-10T18:43:06Z",
+    "Indirect": true,
+    "Sum": "h1:xfeeEhW7pwmX8nuLVlqbzVc7udMDrwetjEv+TZIz1og=",
+    "GoModSum": "h1:q8bcK0KcYlCgd9e7WYLm9LpyS+YeLd8JVDW6WezmKEw=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/godbus/dbus/v5",
+    "Version": "v5.2.2",
+    "Time": "2025-12-29T17:12:48Z",
+    "GoVersion": "1.20",
+    "Sum": "h1:TUR3TgtSVDmjiXOgAAyaZbYmIeP3DPkld3jgKGV8mXQ=",
+    "GoModSum": "h1:3AAv2+hPq5rdnr5txxxRwiGjPXamgoIHgz9FPBfOp3c=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/gofrs/uuid/v5",
+    "Version": "v5.5.1",
+    "Time": "2026-08-03T16:03:09Z",
+    "Indirect": true,
+    "GoVersion": "1.25",
+    "Sum": "h1:z1Ce19/JwNidXpy3tOQc3241lnJLKdKyq/xlNvlD4Ng=",
+    "GoModSum": "h1:bbAA98EoIlxyRHIVg6ektCSsZ5n8mSbwgEhvhMYlZgg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/gogo/protobuf",
+    "Version": "v1.3.2",
+    "Time": "2021-01-10T08:01:47Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/golang-jwt/jwt/v5",
+    "Version": "v5.2.2",
+    "Time": "2025-03-21T20:42:51Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/golang/freetype",
+    "Version": "v0.0.0-20170609003504-e2365dfdc4a0",
+    "Time": "2017-06-09T00:35:04Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/golang/glog",
+    "Version": "v1.2.5",
+    "Time": "2025-04-29T08:43:26Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/golang/groupcache",
+    "Version": "v0.0.0-20241129210726-2c02b8208cf8",
+    "Time": "2024-11-29T21:07:26Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:f+oWsMOmNPc8JmEHVZIycC7hBoQxHH9pNKQORJNozsQ=",
+    "GoModSum": "h1:wcDNUvekVysuuOpQKo3191zZyTpiI6se1N1ULghS0sw=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/golang/mock",
+    "Version": "v1.7.0-rc.1",
+    "Time": "2022-05-12T03:06:13Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/golang/protobuf",
+    "Version": "v1.5.4",
+    "Time": "2024-03-06T06:45:40Z",
+    "Indirect": true,
+    "GoVersion": "1.17",
+    "Sum": "h1:i7eJL8qZTpSEXOPTxNKhASYpMn+8e5Q6AdndVa1dWek=",
+    "GoModSum": "h1:lnTiLA8Wa4RWRcIUkrtSVa5nRhsEGBg48fD6rSs7xps=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/google/btree",
+    "Version": "v1.1.3",
+    "Time": "2024-08-21T16:26:17Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:CVpQJjYgC4VbzxeGVHfvZrv1ctoYCAI8vbl07Fcxlyg=",
+    "GoModSum": "h1:qOPhT0dTNdNzV6Z/lhRX0YXUafgPLFUh+gZMl761Gm4=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/google/certificate-transparency-go",
+    "Version": "v1.3.2",
+    "Time": "2025-06-13T09:05:08Z",
+    "Indirect": true,
+    "GoVersion": "1.23.0",
+    "Sum": "h1:9ahSNZF2o7SYMaKaXhAumVEzXB2QaayzII9C8rv7v+A=",
+    "GoModSum": "h1:H5FpMUaGa5Ab2+KCYsxg6sELw3Flkl7pGZzWdBoYLXs=",
+    "collected_notices": [
+      "LICENSE",
+      "AUTHORS"
+    ]
+  },
+  {
+    "Path": "github.com/google/go-cmp",
+    "Version": "v0.7.0",
+    "Time": "2025-01-14T18:15:44Z",
+    "Indirect": true,
+    "GoVersion": "1.21",
+    "Sum": "h1:wk8382ETsv4JYUZwIsn6YpYiWiBsYLSJiTsyBybVuN8=",
+    "GoModSum": "h1:pXiqmnSA92OHEEa9HXL2W4E7lf9JzCmGVUdgjX3N/iU=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/google/go-querystring",
+    "Version": "v1.1.0",
+    "Time": "2021-03-10T22:41:24Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/google/go-tpm",
+    "Version": "v0.9.4",
+    "Time": "2025-04-28T21:25:12Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/google/gopacket",
+    "Version": "v1.1.19",
+    "Time": "2020-10-19T16:12:32Z",
+    "Indirect": true,
+    "GoVersion": "1.12",
+    "Sum": "h1:ves8RnFZPGiFnTS0uPQStjwru6uO6h+nlr9j6fL7kF8=",
+    "GoModSum": "h1:iJ8V8n6KS+z2U1A8pUwu8bW5SyEMkXJB8Yo/Vo+TKTo=",
+    "collected_notices": [
+      "LICENSE",
+      "AUTHORS"
+    ]
+  },
+  {
+    "Path": "github.com/google/licensecheck",
+    "Version": "v0.3.1",
+    "Time": "2020-09-03T03:49:08Z",
+    "GoVersion": "1.12",
+    "Sum": "h1:QoxgoDkaeC4nFrtGN1jV7IPmDCHFNIVh54e5hSt6sPs=",
+    "GoModSum": "h1:ORkR35t/JjW+emNKtfJDII0zlciG9JgbT7SmsohlHmY=",
+    "collected_notices": [
+      "LICENSE",
+      "license_test.go",
+      "license.go"
+    ]
+  },
+  {
+    "Path": "github.com/google/nftables",
+    "Version": "v0.2.1-0.20240414091927-5e242ec57806",
+    "Time": "2024-04-14T09:19:27Z",
+    "Indirect": true,
+    "GoVersion": "1.21",
+    "Sum": "h1:wG8RYIyctLhdFk6Vl1yPGtSRtwGpVkWyZww1OCil2MI=",
+    "GoModSum": "h1:Beg6V6zZ3oEn0JuiUQ4wqwuyqqzasOltcoXPtgLbFp4=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/google/s2a-go",
+    "Version": "v0.1.9",
+    "Time": "2025-01-06T17:53:46Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/google/trillian",
+    "Version": "v1.7.2",
+    "Time": "2025-04-25T16:18:12Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/google/uuid",
+    "Version": "v1.6.0",
+    "Time": "2024-01-23T18:54:04Z",
+    "Indirect": true,
+    "Sum": "h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=",
+    "GoModSum": "h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/googleapis/enterprise-certificate-proxy",
+    "Version": "v0.3.11",
+    "Time": "2026-01-13T07:11:36Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/googleapis/gax-go/v2",
+    "Version": "v2.17.0",
+    "Time": "2026-02-03T18:41:38Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/gorilla/csrf",
+    "Version": "v1.7.3",
+    "Time": "2025-01-23T20:14:50Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/gorilla/mux",
+    "Version": "v1.8.1",
+    "Time": "2023-10-18T11:23:00Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/gorilla/securecookie",
+    "Version": "v1.1.2",
+    "Time": "2023-10-18T11:18:40Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/gorilla/websocket",
+    "Version": "v1.5.1",
+    "Time": "2023-10-18T12:27:41Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/grpc-ecosystem/go-grpc-middleware",
+    "Version": "v1.4.0",
+    "Time": "2023-03-15T10:41:00Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/grpc-ecosystem/go-grpc-middleware/providers/prometheus",
+    "Version": "v1.0.1",
+    "Time": "2024-04-25T04:50:13Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/grpc-ecosystem/go-grpc-middleware/v2",
+    "Version": "v2.1.0",
+    "Time": "2024-02-22T15:43:25Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/grpc-ecosystem/grpc-gateway/v2",
+    "Version": "v2.26.3",
+    "Time": "2025-03-04T17:40:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/hashicorp/golang-lru/v2",
+    "Version": "v2.0.7",
+    "Time": "2023-09-21T18:26:40Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/hashicorp/yamux",
+    "Version": "v0.1.2",
+    "Time": "2024-09-06T18:40:57Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:XtB8kyFOyHXYVFnwT5C3+Bdo8gArse7j2AQ0DA0Uey8=",
+    "GoModSum": "h1:C+zze2n6e/7wshOZep2A70/aQU6QBRWJO/G6FT1wIns=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/hdevalence/ed25519consensus",
+    "Version": "v0.2.0",
+    "Time": "2024-01-18T17:37:27Z",
+    "Indirect": true,
+    "GoVersion": "1.19",
+    "Sum": "h1:37ICyZqdyj0lAZ8P4D1d1id3HqbbG1N3iBb1Tb4rdcU=",
+    "GoModSum": "h1:w3BHWjwJbFU29IRHL1Iqkw3sus+7FctEyM4RqDxYNzo=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/huin/goupnp",
+    "Version": "v1.3.0",
+    "Time": "2023-08-29T18:12:39Z",
+    "Indirect": true,
+    "GoVersion": "1.14",
+    "Sum": "h1:UvLUlWDNpoUdYzb2TCn+MuTWtcjXKSza2n6CBdQ0xXc=",
+    "GoModSum": "h1:gnGPsThkYa7bFi/KWmEysQRf48l2dvR5bxr2OFckNX8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/illarion/gonotify/v3",
+    "Version": "v3.0.2",
+    "Time": "2024-10-11T09:57:22Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/inconshreveable/mousetrap",
+    "Version": "v1.1.0",
+    "Time": "2022-11-27T22:01:53Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:wN+x4NVGpMsO7ErUn/mUI3vEoE6Jt13X2s0bqwp9tc8=",
+    "GoModSum": "h1:vpF70FUmC8bwa3OWnCshd2FqLfsEA9PFc4w1p2J65bw=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/insomniacslk/dhcp",
+    "Version": "v0.0.0-20260220084031-5adc3eb26f91",
+    "Time": "2026-02-20T08:40:31Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jackc/pgpassfile",
+    "Version": "v1.0.0",
+    "Time": "2019-03-30T16:09:02Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jackc/pgservicefile",
+    "Version": "v0.0.0-20240606120523-5a60cdf6a761",
+    "Time": "2024-06-06T12:05:23Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jackc/pgx/v5",
+    "Version": "v5.7.5",
+    "Time": "2025-05-17T22:14:14Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jackc/puddle/v2",
+    "Version": "v2.2.2",
+    "Time": "2024-09-10T11:12:31Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jackpal/go-nat-pmp",
+    "Version": "v1.0.2",
+    "Time": "2019-11-16T04:51:08Z",
+    "Indirect": true,
+    "Sum": "h1:KzKSgb7qkJvOUTqYl9/Hg/me3pWgBmERKrTGD7BdWus=",
+    "GoModSum": "h1:QPH045xvCAeXUZOxsnwmrtiCoxIr9eob+4orBN1SBKc=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/jellydator/ttlcache/v3",
+    "Version": "v3.1.0",
+    "Time": "2023-08-22T19:58:13Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jessevdk/go-flags",
+    "Version": "v1.4.0",
+    "Time": "2018-03-31T11:19:16Z",
+    "Indirect": true,
+    "GoModSum": "h1:4FA24M0QyGHXBuZZK/XkWh8h0e1EYbRYJSGM75WSRxI=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jhump/protoreflect",
+    "Version": "v1.17.0",
+    "Time": "2024-09-04T19:26:01Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jmespath/go-jmespath",
+    "Version": "v0.4.1-0.20220621161143-b0104c826a24",
+    "Time": "2022-06-21T16:11:43Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jonboulle/clockwork",
+    "Version": "v0.5.0",
+    "Time": "2024-11-29T18:02:53Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jordanlewis/gcassert",
+    "Version": "v0.0.0-20250430164644-389ef753e22e",
+    "Time": "2025-04-30T16:46:44Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/josharian/native",
+    "Version": "v1.1.0",
+    "Time": "2022-12-13T03:33:49Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/jsimonetti/rtnetlink",
+    "Version": "v1.4.1",
+    "Time": "2024-01-25T09:06:22Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:JfD4jthWBqZMEffc5RjgmlzpYttAVw1sdnmiNaPO3hE=",
+    "GoModSum": "h1:xJjT7t59UIZ62GLZbv6PLLo8VFrostJMPBAheR6OM8w=",
+    "collected_notices": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "Path": "github.com/jsimonetti/rtnetlink/v2",
+    "Version": "v2.2.0",
+    "Time": "2026-02-08T11:55:06Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:/KfZ310gOAFrXXol5VwnFEt+ucldD/0dsSRZwpHCP9w=",
+    "GoModSum": "h1:lbjDHxC+5RJ08lzPeA90Ls2pEoId3F08MoEMlhfHxeI=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/keybase/go-keychain",
+    "Version": "v0.0.1",
+    "Time": "2025-02-27T17:52:03Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/klauspost/compress",
+    "Version": "v1.20.0",
+    "Time": "2026-09-02T12:08:18Z",
+    "Indirect": true,
+    "GoVersion": "1.25",
+    "Sum": "h1:a3C1ke2ohxFymNlb2HWAHjDeKCI90scRskErZkR0ezA=",
+    "GoModSum": "h1:LUdAzn7YLVvxLpc7y3V1m40wESHTgc1422pwwBSKYuI=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/klauspost/cpuid/v2",
+    "Version": "v2.3.0",
+    "Time": "2025-07-11T09:57:38Z",
+    "Indirect": true,
+    "GoVersion": "1.22",
+    "Sum": "h1:S4CRMLnYUhGeDFDqkGriYKdfoFlDnMtqTiI/sFzhA9Y=",
+    "GoModSum": "h1:hqwkgyIinND0mEev00jJYCxPNVRVXFQeu1XKlok6oO0=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/koron/go-ssdp",
+    "Version": "v0.0.4",
+    "Time": "2023-02-26T08:13:08Z",
+    "Indirect": true,
+    "GoVersion": "1.19",
+    "Sum": "h1:1IDwrghSKYM7yLf7XCzbByg2sJ/JcNOZRXS2jczTwz0=",
+    "GoModSum": "h1:oDXq+E5IL5q0U8uSBcoAXzTzInwy5lEgC91HoKtbmZk=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/kortschak/wol",
+    "Version": "v0.0.0-20200729010619-da482cc4850a",
+    "Time": "2020-07-29T01:06:19Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/kr/fs",
+    "Version": "v0.1.0",
+    "Time": "2018-05-06T03:17:01Z",
+    "Indirect": true,
+    "Sum": "h1:Jskdu9ieNAYnjxsi0LbQp1ulIKZV1LAFgK1tWhpZgl8=",
+    "GoModSum": "h1:FFnZGqtBN9Gxj7eW1uZ42v5BccTP0vu6NEaFoC2HwRg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/kr/text",
+    "Version": "v0.2.0",
+    "Time": "2020-02-14T20:31:06Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/kylelemons/godebug",
+    "Version": "v1.1.0",
+    "Time": "2019-05-05T01:16:37Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/letsencrypt/challtestsrv",
+    "Version": "v1.4.2",
+    "Time": "2026-02-11T15:46:51Z",
+    "Indirect": true,
+    "GoVersion": "1.24",
+    "Sum": "h1:0ON3ldMhZyWlfVNYYpFuWRTmZNnyfiL9Hh5YzC3JVwU=",
+    "GoModSum": "h1:GhqMqcSoeGpYd5zX5TgwA6er/1MbWzx/o7yuuVya+Wk=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/letsencrypt/pebble/v2",
+    "Version": "v2.10.0",
+    "Time": "2026-02-17T23:33:26Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:Wq6gYXlsY6ubqI3hhxsTzdyotvfdjFBxuwYqCLCnj/U=",
+    "GoModSum": "h1:Sk8cmUIPcIdv2nINo+9PB4L+ZBhzY+F9A1a/h/xmWiQ=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/letsencrypt/pkcs11key/v4",
+    "Version": "v4.0.0",
+    "Time": "2019-11-12T03:04:07Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/lib/pq",
+    "Version": "v1.10.9",
+    "Time": "2023-04-26T04:34:24Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/libdns/acmedns",
+    "Version": "v0.5.0",
+    "Time": "2025-09-26T17:11:22Z",
+    "Indirect": true,
+    "GoVersion": "1.17",
+    "Sum": "h1:5pRtmUj4Lb/QkNJSl1xgOGBUJTWW7RjpNaIhjpDXjPE=",
+    "GoModSum": "h1:X7UAFP1Ep9NpTwWpVlrZzJLR7epynAy0wrIxSPFgKjQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/libdns/alidns",
+    "Version": "v1.0.6",
+    "Time": "2026-01-21T10:42:21Z",
+    "Indirect": true,
+    "GoVersion": "1.16",
+    "Sum": "h1:/Ii428ty6WHFJmE24rZxq2taq++gh7rf9jhgLfp8PmM=",
+    "GoModSum": "h1:RECwyQ88e9VqQVtSrvX76o1ux3gQUKGzMgxICi+u7Ec=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/libdns/cloudflare",
+    "Version": "v0.2.2",
+    "Time": "2025-10-21T22:47:38Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:XWHv+C1dDcApqazlh08Q6pjytYLgR2a+Y3xrXFu0vsI=",
+    "GoModSum": "h1:w9uTmRCDlAoafAsTPnn2nJ0XHK/eaUMh86DUk8BWi60=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/libdns/libdns",
+    "Version": "v1.1.1",
+    "Time": "2025-08-13T15:29:26Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:wPrHrXILoSHKWJKGd0EiAVmiJbFShguILTg9leS/P/U=",
+    "GoModSum": "h1:4Bj9+5CQiNMVGf87wjX4CY3HQJypUHRuLvlsfsZqLWQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/libp2p/go-nat",
+    "Version": "v1.0.1-0.20250821073202-01afc089f138",
+    "Time": "2025-08-21T07:32:02Z",
+    "Indirect": true,
+    "GoVersion": "1.24",
+    "Sum": "h1:YohuNPT/1k3VcThCQlBZ43PCPWPfMRS1zcxWBF2SLK8=",
+    "GoModSum": "h1:TXQg5tfSy+bUjnhT5728j5j/MBj7keIYqqZ1+8k/ui8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/libp2p/go-netroute",
+    "Version": "v0.2.1",
+    "Time": "2022-11-01T15:27:21Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:V8kVrpD8GK0Riv15/7VN6RbUQ3URNZVosw7H2v9tksU=",
+    "GoModSum": "h1:hraioZr0fhBjG0ZRXJJ6Zj2IVEVNx6tDTFQfSmcq7mQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/logrusorgru/aurora",
+    "Version": "v2.0.3+incompatible",
+    "Time": "2020-07-03T00:59:10Z",
+    "Indirect": true,
+    "Sum": "h1:tOpm7WcpBTn4fjmVfgpQq0EfczGlG91VSDkswnjF5A8=",
+    "GoModSum": "h1:7rIyQOR62GCctdiQpZ/zOJlFyk6y+94wXzv6RNZgaR4=",
+    "collected_notices": [
+      "LICENSE",
+      "AUTHORS.md"
+    ]
+  },
+  {
+    "Path": "github.com/lxn/walk",
+    "Version": "v0.0.0-20210112085537-c389da54e794",
+    "Time": "2021-01-12T08:55:37Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/lxn/win",
+    "Version": "v0.0.0-20210218163916-a377121e959e",
+    "Time": "2021-02-18T16:39:16Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/mattn/go-colorable",
+    "Version": "v0.1.15",
+    "Time": "2026-05-29T14:40:24Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/mattn/go-isatty",
+    "Version": "v0.0.23",
+    "Time": "2026-07-16T06:19:57Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/mattn/go-runewidth",
+    "Version": "v0.0.27",
+    "Time": "2026-07-24T01:06:52Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/mattn/go-sqlite3",
+    "Version": "v1.14.28",
+    "Time": "2025-04-16T13:41:38Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/mdlayher/genetlink",
+    "Version": "v1.3.2",
+    "Time": "2023-04-29T14:36:59Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/mdlayher/netlink",
+    "Version": "v1.11.2",
+    "Time": "2026-05-16T07:24:36Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:HKh2jqe+omdSWcQ88nrT7INE61B0NXfiSPFdgL4YbNI=",
+    "GoModSum": "h1:uT2Yc/QLaZubzDpZIBi9d4GoeLwtp3x1AMeqSRrK2sA=",
+    "collected_notices": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "Path": "github.com/mdlayher/sdnotify",
+    "Version": "v1.0.0",
+    "Time": "2022-04-06T16:01:41Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/mdlayher/socket",
+    "Version": "v0.6.0",
+    "Time": "2026-03-31T15:14:23Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:ScZPaAGyO1icQnbFrhPM8mnXyMu9qukC1K4ZoM2IQKU=",
+    "GoModSum": "h1:q7vozUAnxSqnjHc12Fik5yUKIzfZ8ITCfMkhOtE9z18=",
+    "collected_notices": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "Path": "github.com/metacubex/utls",
+    "Version": "v1.8.7",
+    "Time": "2026-06-26T09:07:41Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:Cp+yWkNTFkSihETgGWq34hlVFds5HpYWVOR1xovUVTs=",
+    "GoModSum": "h1:kncGGVhFaoGn5M3pFe3SXhZCzsbCJayNOH4UEqTKTko=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/mholt/acmez/v3",
+    "Version": "v3.1.6",
+    "Time": "2026-02-20T19:16:43Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:eGVQNObP0pBN4sxqrXeg7MYqTOWyoiYpQqITVWlrevk=",
+    "GoModSum": "h1:5nTPosTGosLxF3+LU4ygbgMRFDhbAVpqMI4+a4aHLBY=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/miekg/dns",
+    "Version": "v1.1.72",
+    "Time": "2026-01-22T08:23:52Z",
+    "GoVersion": "1.24.0",
+    "Sum": "h1:vhmr+TF2A3tuoGNkLDFK9zi36F2LS+hKTRW0Uf8kbzI=",
+    "GoModSum": "h1:+EuEPhdHOsfk6Wk5TT2CzssZdqkmFhf8r+aVyDEToIs=",
+    "collected_notices": [
+      "LICENSE",
+      "AUTHORS"
+    ]
+  },
+  {
+    "Path": "github.com/miekg/pkcs11",
+    "Version": "v1.1.1",
+    "Time": "2022-01-05T09:50:38Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/mitchellh/go-ps",
+    "Version": "v1.0.0",
+    "Time": "2020-02-03T20:02:15Z",
+    "Indirect": true,
+    "GoVersion": "1.13",
+    "Sum": "h1:i6ampVEEF4wQFF+bkYfwYgY+F/uYJDktmvLPf7qIgjc=",
+    "GoModSum": "h1:J4lOc8z8yJs6vUwklHw2XEIiT4z4C40KtWVN3nvg8Pg=",
+    "collected_notices": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "Path": "github.com/munnerz/goautoneg",
+    "Version": "v0.0.0-20191010083416-a7dc8b61c822",
+    "Time": "2019-10-10T08:34:16Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/nfnt/resize",
+    "Version": "v0.0.0-20180221191011-83c6a9932646",
+    "Time": "2018-02-21T19:10:11Z",
+    "Indirect": true,
+    "Sum": "h1:zYyBkD/k9seD2A7fsi6Oo2LfFZAehjjQMERAvZLEDnQ=",
+    "GoModSum": "h1:jpp1/29i3P1S/RLdc7JQKbRpFeM1dOBd8T9ki5s+AY8=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/olekukonko/tablewriter",
+    "Version": "v0.0.5",
+    "Time": "2021-02-10T15:55:18Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/openai/openai-go/v3",
+    "Version": "v3.26.0",
+    "Time": "2026-03-05T23:10:14Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/opencontainers/runtime-spec",
+    "Version": "v1.2.1",
+    "Time": "2025-02-25T22:46:15Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/oschwald/geoip2-golang",
+    "Version": "v1.13.0",
+    "Time": "2025-07-07T19:38:58Z",
+    "GoVersion": "1.21",
+    "Sum": "h1:Q44/Ldc703pasJeP5V9+aFSZFmBN7DKHbNsSFzQATJI=",
+    "GoModSum": "h1:P9zG+54KPEFOliZ29i7SeYZ/GM6tfEL+rgSn03hYuUo=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/oschwald/maxminddb-golang",
+    "Version": "v1.13.1",
+    "Time": "2024-06-28T17:36:41Z",
+    "GoVersion": "1.21",
+    "Sum": "h1:G3wwjdN9JmIK2o/ermkHM+98oX5fS+k5MbwsmL4MRQE=",
+    "GoModSum": "h1:K4pgV9N/GcK694KSTmVSDTODk4IsCNThNdTmnaBZ/F8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/philhofer/fwd",
+    "Version": "v1.2.0",
+    "Time": "2024-09-16T14:44:58Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/pierrec/lz4/v4",
+    "Version": "v4.1.26",
+    "Time": "2026-03-06T08:33:31Z",
+    "Indirect": true,
+    "GoVersion": "1.17",
+    "Sum": "h1:GrpZw1gZttORinvzBdXPUXATeqlJjqUG/D87TKMnhjY=",
+    "GoModSum": "h1:EoQMVJgeeEOMsCqCzqFm2O0cJvljX2nGZjcRIPL34O4=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/pion/dtls/v3",
+    "Version": "v3.1.5",
+    "Time": "2026-07-06T02:22:52Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:9xJtVsHwMYeSjPp5Hh1FTis4DchnQWtnOa5o+6ygqfc=",
+    "GoModSum": "h1:gz1K4jg6c+fq86oQMH4pilpCEOEPwmEr2jY+VcF/mkU=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/pion/logging",
+    "Version": "v0.2.4",
+    "Time": "2025-06-22T20:07:28Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:tTew+7cmQ+Mc1pTBLKH2puKsOvhm32dROumOZ655zB8=",
+    "GoModSum": "h1:DffhXTKYdNZU+KtJ5pyQDjvOAh/GsNSyv1lbkFbe3so=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/pion/transport/v4",
+    "Version": "v4.0.2",
+    "Time": "2026-05-28T08:30:14Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:ifYlPqNwsy6aKQ9y8yzxXlHae5431ZrH2avkD/Rn6Tk=",
+    "GoModSum": "h1:06hFI+jCFcok2X2MekVufNZ/uzNZXivGBPfviSVcjgM=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/pires/go-proxyproto",
+    "Version": "v0.8.1",
+    "Time": "2025-05-02T21:00:09Z",
+    "Indirect": true,
+    "GoVersion": "1.24",
+    "Sum": "h1:9KEixbdJfhrbtjpz/ZwCdWDD2Xem0NZ38qMYaASJgp0=",
+    "GoModSum": "h1:ZKAAyp3cgy5Y5Mo4n9AlScrkCZwUy0g3Jf+slqQVcuU=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/pkg/sftp",
+    "Version": "v1.13.10",
+    "Time": "2025-10-22T22:24:47Z",
+    "Indirect": true,
+    "GoVersion": "1.23.0",
+    "Sum": "h1:+5FbKNTe5Z9aspU88DPIKJ9z2KZoaGCu6Sr6kKR/5mU=",
+    "GoModSum": "h1:bJ1a7uDhrX/4OII+agvy28lzRvQrmIQuaHrcI1HbeGA=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/planetscale/vtprotobuf",
+    "Version": "v0.6.1-0.20240319094008-0393e58bdf10",
+    "Time": "2024-03-19T09:40:08Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/pmezard/go-difflib",
+    "Version": "v1.0.1-0.20181226105442-5d4384ee4fb2",
+    "Time": "2018-12-26T10:54:42Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/prometheus/client_golang",
+    "Version": "v1.23.2",
+    "Time": "2025-09-05T14:03:59Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/prometheus/client_model",
+    "Version": "v0.6.2",
+    "Time": "2025-04-11T05:38:16Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/prometheus/common",
+    "Version": "v0.69.0",
+    "Time": "2026-06-17T08:40:11Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/prometheus/procfs",
+    "Version": "v0.20.1",
+    "Time": "2026-02-28T15:22:44Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/prometheus/prometheus",
+    "Version": "v0.51.0",
+    "Time": "2024-03-19T10:49:40Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/quic-go/qpack",
+    "Version": "v0.6.0",
+    "Time": "2025-11-17T02:04:08Z",
+    "Indirect": true,
+    "GoVersion": "1.24",
+    "Sum": "h1:g7W+BMYynC1LbYLSqRt8PBg5Tgwxn214ZZR34VIOjz8=",
+    "GoModSum": "h1:lUpLKChi8njB4ty2bFLX2x4gzDqXwUpaO1DP9qMDZII=",
+    "collected_notices": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "Path": "github.com/rivo/uniseg",
+    "Version": "v0.4.7",
+    "Time": "2024-02-08T13:16:15Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/rogpeppe/go-internal",
+    "Version": "v1.16.0",
+    "Time": "2026-07-01T15:11:24Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/rs/cors",
+    "Version": "v1.11.1",
+    "Time": "2024-08-29T11:33:59Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/russross/blackfriday/v2",
+    "Version": "v2.1.0",
+    "Time": "2020-10-27T03:47:54Z",
+    "Indirect": true,
+    "GoModSum": "h1:+Rmxgy9KzJVeS9/2gXHxylqXiyQDYRxCVz55jmeOWTM=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/safchain/ethtool",
+    "Version": "v0.3.0",
+    "Time": "2023-03-09T23:07:34Z",
+    "Indirect": true,
+    "GoVersion": "1.16",
+    "Sum": "h1:gimQJpsI6sc1yIqP/y8GYgiXn/NjgvpM0RNoWLVVmP0=",
+    "GoModSum": "h1:SA9BwrgyAqNo7M+uaL6IYbxpm5wk3L7Mm6ocLW+CJUs=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/asc-go",
+    "Version": "v0.0.0-20260914163356-9e3d45a797c1",
+    "Time": "2026-09-14T16:33:56Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/bbolt",
+    "Version": "v0.0.0-20260915102804-500ee1e84832",
+    "Time": "2026-09-15T10:28:04Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:KDXMGbzqLmDdKcld0T3wuMuqf1iezZq+DemgtZ/vhtQ=",
+    "GoModSum": "h1:7/qFPFH5fqK5XQeY8EA1Qpaly08Av77p38Zt50ieQww=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/cors",
+    "Version": "v1.2.1",
+    "Time": "2024-08-23T04:45:14Z",
+    "GoVersion": "1.14",
+    "Sum": "h1:Cv5Z8y9YSD6Gm+qSpNrL3LO4lD3eQVvbFYJSG7JCMHQ=",
+    "GoModSum": "h1:O64VyOjjhrkLmQIjF4KGRrJO/5dVXFdpEmCW/eISRAI=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go",
+    "Version": "v0.0.0-20261023060337-b3c2ed82ac97",
+    "Time": "2026-10-23T06:03:37Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:+ZwgeM1t+T/gdYACPVPGd1w1ohMV47V7SFlpzE/e2QM=",
+    "GoModSum": "h1:T/mwtrpC4JlWfScw73CmSBvHzIvc7BatQ1MhRr+cYNw=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/all",
+    "Version": "v0.0.0-20261023060337-b3c2ed82ac97",
+    "Time": "2026-10-23T06:03:37Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:Ju5be/tII96+Lctz7mvPk9QBXXN+U4zhVGt4NsjmaIg=",
+    "GoModSum": "h1:4o0jA7bx/CgdKPoOLPHZuImsDA+fhBxkxHMn5JmE44E=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/android_386",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:g78ianlkXOC/jDakY2Ksz+gfp/+Er55I8Sqj+iU74SE=",
+    "GoModSum": "h1:XXDwdjX/T8xftoeJxQmbBoYXZp8MAPFR2CwbFuTpEtw=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/android_amd64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:+tk+FVcARnUTi8S1DXJU9+W++CTSRAffjtaP2N4aBz8=",
+    "GoModSum": "h1:iNiUGoLtnr8/JTuVNj7XJbmpOAp2C6+B81KDrPxwaZM=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/android_arm",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:aZFuWSrt43k0EUvVOtPrH/7Gp7GMJOR0bIv2Gdyxo9M=",
+    "GoModSum": "h1:19ILNUOGIzRdOqa2mq+iY0JoHxuieB7/lnjYeaA2vEc=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/android_arm64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:9SbWoZmIvO0xwy1Kx+84V1po2HWZRDgBv5BO+akGKrM=",
+    "GoModSum": "h1:JxzGyQf94Cr6sBShKqODGDyRUlESfJK/Njcz9Lz6qMQ=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/darwin_amd64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:f3OiAV2h1yK2I8K0zFog76GNAu9PanaHeoe3cV5WGJo=",
+    "GoModSum": "h1:KN+9T9TBycGOLzmKU4QdcHAJEj6Nlx48ifnlTvvHMvs=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/darwin_arm64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:vY0rveXEXVA20O31/QROyE8P8hOtr4RUqjnjA7ZypvU=",
+    "GoModSum": "h1:kojvtUc29KKnk8hs2QIANynVR59921SnGWA9kXohHc0=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/ios_amd64_simulator",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:eEhBqi9eqj93aOAMrSe06fVCkEKwNgHIIq51QZ9zchs=",
+    "GoModSum": "h1:hkQzRE5GDbaH1/ioqYh0Taho4L6i0yLRCVEZ5xHz5M0=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/ios_arm64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:PKfCe2fS0bO//Lu6UP1s/4tdhqas83M/SEqWXCM0O7M=",
+    "GoModSum": "h1:tzVJFTOm66UxLxy6K0ZN5Ic2PC79e+sKKnt+V9puEa4=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/ios_arm64_simulator",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:mXUj1bE8KhKrrcPOwQoVMAlM4egfMJgcDGWIY705qUk=",
+    "GoModSum": "h1:M/pN6m3j0HFU6/y83n0HU6GLYys3tYdr/xTE8hVEGMo=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_386",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:fkIQPR+ppWb8oWzgk7QRvsVgiQUq7DA0Ty1oYvVz9LA=",
+    "GoModSum": "h1:cGh5hO6eljCo6KMQ/Cel8Xgq4+etL0awZLRBDVG1EZQ=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_386_musl",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:/Bezuo7Eu9ed10kIONaBjVscWn34TQ93zM8RPDkVrjA=",
+    "GoModSum": "h1:JFE0/cxaKkx0wqPMZU7MgaplQlU0zudv82dROJjClKU=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_amd64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:MLGy7pMX7UbE/vI8bLlvZZcJJDnH6DxkgJWbjA7tHxo=",
+    "GoModSum": "h1:vU8VftFeSt7fURCa3JXD6+k6ss1YAX+idQjPvHmJ2tI=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_amd64_musl",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:ats4vcnXrMuuT87FNPHoQ0IO9eZ1UboYR5MP47PkJlc=",
+    "GoModSum": "h1:vCe4OUuL+XOUge9v3MyTD45BnuAXiH+DkjN9quDXJzQ=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_arm",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:XbQXJw43TGwq8aXptM8z7P6bTAdqi6jGj/WzKK2G3o8=",
+    "GoModSum": "h1:w9amBWrvjtohQzBGCKJ7LCh22LhTIJs4sE7cYaKQzM0=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_arm64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:9hq4CZxKfjJIZqFbz4B4eHtaUcT5NE1Mo5GQEWwlDcc=",
+    "GoModSum": "h1:TqlsFtcYS/etTeck46kHBeT8Le0Igw1Q/AV88UnMS3s=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_arm64_musl",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:vSNX8xpOif57PsD8rTPRWUYOZPYLxpMCei0BKBodNWg=",
+    "GoModSum": "h1:B6Qd0vys8sv9OKVRN6J9RqDzYRGE938Fb2zrYdBDyTQ=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_arm_musl",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:3z5zKVMltoWh0y8mnezBy2K4xRjw58YsLwu+EPI+jxI=",
+    "GoModSum": "h1:3tXMMFY7AHugOVBZ5Al7cL7JKsnFOe5bMVr0hZPk3ow=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_loong64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:CAIV8mqtJT0nZFKDN4pnhvlShWX7pYiujXBk6ClYb5c=",
+    "GoModSum": "h1:Wt5uFdU3tnmm8YzobYewwdF7Mt6SucRQg6xeTNWC3Tk=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_loong64_musl",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:Nyc7+8Ri52mqzJ1p14XubDDK1dH5FjA01cmUVY8tvfg=",
+    "GoModSum": "h1:lyIF6wKBLwWa5ZXaAKbAoewewl+yCHo2iYev39Mbj4E=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_mips64le",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:c3/2zYW0Lvd3Xy9O6puXJVJmfpj4YoIUEn7ZiKBBRSs=",
+    "GoModSum": "h1:H46PnSTTZNcZokLLiDeMDaHiS1l14PH3tzWi0eykjD8=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_mipsle",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:6TYokhSZxxIGAjBK5QSYRkQTqL3kdA02DeOvihx8Bgs=",
+    "GoModSum": "h1:RBhSUDAKWq7fswtV4nQUQhuaTLcX3ettR7teA7/yf2w=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_mipsle_musl",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:iYGRSc7toev8hPi9+xTDCRNVcCzGzwW1mTrf4aMaIRE=",
+    "GoModSum": "h1:wRzoIOGG4xbpp3Gh3triLKwMwYriScXzFtunLYhY4w0=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_riscv64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:3r3/hEwl2D3VbJ2KiNXmExOj2MKVXTEmm/ZbGTvmZHA=",
+    "GoModSum": "h1:LNiZXmWil1OPwKCheqQjtakZlJuKGFz+iv2eGF76Hhs=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/linux_riscv64_musl",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:u47JrdZmryf6XOAn/W8Spjq3TLVBCjR0NssFRJEKEgQ=",
+    "GoModSum": "h1:YFDGKTkpkJGc5+hnX/RYosZyTWg9h+68VB55fYRRLYc=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/tvos_amd64_simulator",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:0jNmGLF9KxtoH5e2yddnF+D0RN0SGPWA9pMWqY91IlA=",
+    "GoModSum": "h1:aaX0YGl8nhGmfRWI8bc3BtDjY8Vzx6O0cS/e1uqxDq4=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/tvos_arm64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:noVvRZGO3O2ATz0duLRIKsWkJrEZ9wRAGZa4+dHwFzw=",
+    "GoModSum": "h1:EdzMKA96xITc42QEI+ct4SwqX8Dn3ltKK8wzdkLWpSc=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/tvos_arm64_simulator",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:YIjnV6MTYuDJlSQKYxjRl5bJrV4Rz3LiB8xl2MgLdEA=",
+    "GoModSum": "h1:qix4kv1TTAJ5tY4lJ9vjhe9EY4mM+B7H5giOhbxDVcc=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/windows_amd64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:U9aJ0A/9+aiyCsMDPjB7zECbab/GgcWSvVATO3SQojw=",
+    "GoModSum": "h1:lm9w/oCCRyBiUa3G8lDQTT8x/ONUvgVR2iV9fVzUZB8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/cronet-go/lib/windows_arm64",
+    "Version": "v0.0.0-20261023055542-d5437a0df01a",
+    "Time": "2026-10-23T05:55:42Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:myKVXWB/H3b3UWqwtMSTJePILTYFynVDD+oWdZM2I68=",
+    "GoModSum": "h1:n34YyLgapgjWdKa0IoeczjAFCwD3/dxbsH5sucKw0bw=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/fswatch",
+    "Version": "v0.1.2",
+    "Time": "2026-04-19T12:36:46Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:/TT7k4mkce1qFPxamLO842WjqBgbTBiXP2mlUjp9PFk=",
+    "GoModSum": "h1:5BpGmpUQVd3Mc5r313HRpvADHRg3/rKn5QbwFteB880=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/gliderssh",
+    "Version": "v0.3.4-0.20261023092853-e0cad6d28647",
+    "Time": "2026-10-23T09:28:53Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:k4Yg+5FnI1CIYc25zxHJJ1A5JDr/VULxw0Bs5U7fpsY=",
+    "GoModSum": "h1:FmW0l0t/PzGIdJMr3iXOL+KuxvJTt6XAfF4GxbMlfZc=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/gomobile",
+    "Version": "v0.1.13",
+    "Time": "2026-06-11T06:36:04Z",
+    "GoVersion": "1.23.0",
+    "Sum": "h1:foTOGKJetah9VwaJl1XJx5TswIAVg8NfYmHOhrOc95I=",
+    "GoModSum": "h1:A8l3FlHi2D/+mfcd4HHvk5DGFPW/ShFb9jHP5VmSiDY=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/gvisor",
+    "Version": "v0.0.0-20260727.0-sing-box-mod.1",
+    "Time": "2026-08-04T23:57:30Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:IdQ7yTKkB2wv8txwshxUroPlO4npOYAV71xb7xQ7Lys=",
+    "GoModSum": "h1:9O3SQskYuCfdHNvHEsWuEAgoyKEF74PiWp4NsNUia8g=",
+    "collected_notices": [
+      "LICENSE",
+      "AUTHORS"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/netlink",
+    "Version": "v0.0.0-20260814022025-64455d367bbf",
+    "Time": "2026-08-14T02:20:25Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:b/3rm+KvxzuYRcnMdLq/hmcqX6/2B8k24l6SDHL2Piw=",
+    "GoModSum": "h1:xLnfdiJbSp8rNqYEdIW/6eDO4mVoogml14Bh2hSiFpM=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/nftables",
+    "Version": "v0.3.0-mod.4",
+    "Time": "2026-07-14T05:20:19Z",
+    "Indirect": true,
+    "GoVersion": "1.21",
+    "Sum": "h1:vnOtcDYeSXv2e5RoRuGH0lrpttQFJ8iC4ICS2nhlDSo=",
+    "GoModSum": "h1:8kslHG4VvYNihcco+i6uxIX7qbT8A56T0y5q7U44ZaQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/quic-go",
+    "Version": "v0.61.0-sing-box-mod.12",
+    "Time": "2026-10-22T06:27:24Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:9/USaaiONHFeqBePb+4C/A0MBM2dmxED49UGBpHLHS4=",
+    "GoModSum": "h1:hmLC8GJPp+BrpBgrgJnacvI4fZGIhasuy1ROJJ8GR4E=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing",
+    "Version": "v0.9.7-0.20261023115510-03a6cce64bf7",
+    "Time": "2026-10-23T11:55:10Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:idTY/eRW81qzIN0DLYoaUyeeY/yTDLY2qn6zimm6z6Y=",
+    "GoModSum": "h1:K3Owt3xPhHugvlnlPPxZJ/exXdaJfEPOTNorGk4AXjo=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-anytls",
+    "Version": "v0.0.0-20260928104022-580984e4d8cb",
+    "Time": "2026-09-28T10:40:22Z",
+    "GoVersion": "1.24.0",
+    "Sum": "h1:n4sF2zv0CR1gcb4awh61t11t0FZmcP40x5enB8HARjE=",
+    "GoModSum": "h1:VRKLnj0ObEsN228h+zuzf91p+6sjtYE8SBaLPVsBy5o=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-box",
+    "Version": "v1.15.0-alpha.13",
+    "Time": "2026-10-23T14:39:57Z",
+    "GoVersion": "1.25.5",
+    "Sum": "h1:O6728RBadOUoC186Lsky8Mt0f6Ulca0XcM2EQFVOtEQ=",
+    "GoModSum": "h1:ZammbTArdjjUecHmXdXatOHMWI4lZNgKh/i+yvY+rng=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-cloudflared",
+    "Version": "v0.1.4-0.20261021152903-2d40d788fcf6",
+    "Time": "2026-10-21T15:29:03Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sagernet/sing-mux",
+    "Version": "v0.3.10-0.20260929204512-caf09fe32475",
+    "Time": "2026-09-29T20:45:12Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:aG0DqHEOjax7DyfE1GTAXZotOg3QGVCz3/8rCSua2kg=",
+    "GoModSum": "h1:jricpwCOndDsTEM1TM3piJvhL/2Mm7OhLkm+JadJJ1Q=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-openconnect",
+    "Version": "v0.1.1-0.20260929151226-29757281a247",
+    "Time": "2026-09-29T15:12:26Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:Ui4XtxNgQiEquK+ch4dYhthKsVlGQpdCdKIpOuJVyog=",
+    "GoModSum": "h1:4AKZLVcvY3r54UaK2Gbnm7aN8pOwdLz+y4EP0QFZ5Eg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-openvpn",
+    "Version": "v0.1.1-0.20261020061844-7d24ecd92837",
+    "Time": "2026-10-20T06:18:44Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:ifG3togKTHEGaGVTzPWKURazrda/C/acQn48VKhozCg=",
+    "GoModSum": "h1:PWX7WygD8jpwfqfaGNySXpJYTn0SOwjBI1BKHHC2+Bw=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-quic",
+    "Version": "v0.7.2-0.20261020082049-7e0a5869a5f4",
+    "Time": "2026-10-20T08:20:49Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:QuhAb8QW0pKYmSvfj/nK91libunBwVJiWb852yidlxI=",
+    "GoModSum": "h1:rJFeVxbEej2iuyeCJ3drKW+p5rOgtLIW3XhZ6ty7Fig=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-shadowsocks",
+    "Version": "v0.2.9-0.20260929204512-65740e0f0e3e",
+    "Time": "2026-09-29T20:45:12Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:LKgE/uuqp/D2kgxYViOz8vf4slaCUfpFywXjtuwD5gU=",
+    "GoModSum": "h1:lo7TWEMDcN5/h5B8S0ew+r78ZODn6SwVaFhvB6H+PTI=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-shadowsocks2",
+    "Version": "v0.2.2-0.20260929152114-a69d1086332b",
+    "Time": "2026-09-29T15:21:14Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:VH65QNqSHat2b+N3Rlzo5Qe44gRmQGwzY5atuy3D0A8=",
+    "GoModSum": "h1:RnXS0lExcDAovvDeniJ4IKa2IuChrdipolPYWBv9hWQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-shadowtls",
+    "Version": "v0.2.2-0.20260928201441-a9c0127d5c99",
+    "Time": "2026-09-28T20:14:41Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:l/tdZjaoDp3iqEG4NVrFHtphy1+Qjt9bpWAgNbF8iGg=",
+    "GoModSum": "h1:sWqKnGlMipCHaGsw1sTTlimyUpgzP4WP3pjhCsYt9oA=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-snell",
+    "Version": "v0.0.0-20260904135315-bc5a12ac736f",
+    "Time": "2026-09-04T13:53:15Z",
+    "GoVersion": "1.24.0",
+    "Sum": "h1:tbTCI+iis5sTmua7a6Q7vebcSRURok/LGgnEafnQAsc=",
+    "GoModSum": "h1:et8Lws4f5QbOrY65DmjevHGup3mijJkhswkto6cwciM=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-tun",
+    "Version": "v0.9.7-0.20261023115453-611d83b7a57b",
+    "Time": "2026-10-23T11:54:53Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:GJhvtWFcBCBvvTqg1u9mL3f2yFo1kwPHglgdEjVtPEo=",
+    "GoModSum": "h1:liMb9HPIWcFWqF6VJ/ttIY8fTSRPdRltBeSeEcXt1Dk=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-usbip",
+    "Version": "v0.0.0-20260817040617-28bd42667eca",
+    "Time": "2026-08-17T04:06:17Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:5wA+IE0Fq1CGVLOgSpm0gKKZ03HzugcJ2JyhmDqeX6A=",
+    "GoModSum": "h1:ADAZZU85MnM91XNhd2TdZRTaIbA7RjTZuQ1KCHcUbNg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/sing-vmess",
+    "Version": "v0.2.9-0.20261019223527-a0c58542bd9d",
+    "Replace": {
+      "Path": "github.com/xchacha20-poly1305/sing-vmess",
+      "Version": "v0.2.9-0.20261001065223-6e0057f95c32",
+      "Time": "2026-10-01T06:52:23Z",
+      "GoVersion": "1.22",
+      "Sum": "h1:PfRzrwmgM0BpI6/ULMir2fcBoImuoT2yeNscclIU8AE=",
+      "GoModSum": "h1:J9KdaudLrphXQtyp/lnb/8hhmjM0DZ++FU91HhcDZUM="
+    },
+    "GoVersion": "1.22",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/smux",
+    "Version": "v1.5.50-sing-box-mod.1",
+    "Time": "2026-01-16T18:14:28Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:XkJcivBC9V4wBjiGXIXZ229aZCU1hzcbp6kSkkyQ478=",
+    "GoModSum": "h1:NjhsCEWedJm7eFLyhuBgIEzwfhRmytrUoiLluxs5Sk8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/tailscale",
+    "Version": "v1.102.1-sing-box-1.14-mod.5.0.20261022222424-1688b52f8204",
+    "Time": "2026-10-22T22:24:24Z",
+    "Indirect": true,
+    "GoVersion": "1.25.5",
+    "Sum": "h1:k25hl6yegTD3I3UEp95ZF09KDBiFsutUawV7vjRjQsg=",
+    "GoModSum": "h1:Z8Eql5l0q6mQ+etunojfaZxNJVhEkpbKGS/nnx9ZQpE=",
+    "collected_notices": [
+      "LICENSE",
+      "license_test.go"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/wireguard-go",
+    "Version": "v0.0.8-0.20261022215849-fdf0ad046586",
+    "Time": "2026-10-22T21:58:49Z",
+    "Indirect": true,
+    "GoVersion": "1.25",
+    "Sum": "h1:lssrGZJRiO6s2ShbBjchpFsNml9cj/7G+aeEL57ZvVc=",
+    "GoModSum": "h1:er10sELpmzLXq7S7Pbc1Zsbyapcr+/gxNAHKTo6fzVA=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sagernet/ws",
+    "Version": "v0.0.0-20231204124109-acfe8907c854",
+    "Time": "2023-12-04T12:41:09Z",
+    "Indirect": true,
+    "GoVersion": "1.15",
+    "Sum": "h1:6uUiZcDRnZSAegryaUGwPC/Fj13JSHwiTftrXhMmYOc=",
+    "GoModSum": "h1:LtfoSK3+NG57tvnVEHgcuBW9ujgE8enPSgzgwStwCAA=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/sergi/go-diff",
+    "Version": "v1.3.1",
+    "Time": "2023-01-13T08:54:48Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sirupsen/logrus",
+    "Version": "v1.9.3",
+    "Time": "2023-05-21T12:59:35Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/skip2/go-qrcode",
+    "Version": "v0.0.0-20200617195104-da1b6568686e",
+    "Time": "2020-06-17T19:51:04Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/smallstep/pkcs7",
+    "Version": "v0.1.1",
+    "Time": "2024-12-16T14:13:52Z",
+    "Indirect": true,
+    "GoVersion": "1.14",
+    "Sum": "h1:x+rPdt2W088V9Vkjho4KtoggyktZJlMduZAtRHm68LU=",
+    "GoModSum": "h1:dL6j5AIz9GHjVEBTXtW+QliALcgM19RtXaTeyxI+AfA=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/soheilhy/cmux",
+    "Version": "v0.1.5",
+    "Time": "2021-02-05T19:11:34Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/sourcegraph/go-diff",
+    "Version": "v0.7.0",
+    "Time": "2023-01-22T19:17:19Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/spf13/cobra",
+    "Version": "v1.10.2",
+    "Time": "2025-12-03T23:51:15Z",
+    "GoVersion": "1.15",
+    "Sum": "h1:DMTTonx5m65Ic0GOoRY2c16WCbHxOOw6xxezuLaBpcU=",
+    "GoModSum": "h1:7C1pvHqHw5A4vrJfjNwvOdzYu0Gml16OCs2GRiTUUS4=",
+    "collected_notices": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "Path": "github.com/spf13/pflag",
+    "Version": "v1.0.10",
+    "Time": "2025-09-02T06:08:29Z",
+    "Indirect": true,
+    "GoVersion": "1.12",
+    "Sum": "h1:4EBh2KAYBwaONj6b2Ye1GiHfwjqyROoF4RwYO+vPwFk=",
+    "GoModSum": "h1:McXfInJRrz4CZXVZOBLb0bTZqETkiAhM9Iw0y3An2Bg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/spiffe/go-spiffe/v2",
+    "Version": "v2.7.0",
+    "Time": "2026-06-03T20:07:47Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/stretchr/objx",
+    "Version": "v0.5.3",
+    "Time": "2025-10-03T06:41:42Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/stretchr/testify",
+    "Version": "v1.12.1",
+    "Time": "2026-08-17T08:24:05Z",
+    "GoVersion": "1.17",
+    "Sum": "h1:EuwCh5fleGS7H32xRwO3wRGT7DxrDhLAT6FF8MpWDWE=",
+    "GoModSum": "h1:MDEgiDPPsNp5cuIrHPPCyornHKgEVbtFUmoNlxoYthg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/tailscale/certstore",
+    "Version": "v0.1.1-0.20260409135935-3638fb84b77d",
+    "Time": "2026-04-09T13:59:35Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:JcGKBZAL7ePLwOhUdN8qGQZlP5GueEiIZwY7R62pejE=",
+    "GoModSum": "h1:XrBNfAFN+pwoWuksbFS9Ccxnopa15zJGgXRFN90l3K4=",
+    "collected_notices": [
+      "LICENSE.md"
+    ]
+  },
+  {
+    "Path": "github.com/tailscale/go-winio",
+    "Version": "v0.0.0-20231025203758-c4f33415bf55",
+    "Time": "2023-10-25T20:37:58Z",
+    "GoVersion": "1.17",
+    "Sum": "h1:Gzfnfk2TWrk8Jj4P4c1a3CtQyMaTVCznlkLZI++hok4=",
+    "GoModSum": "h1:4k4QO+dQ3R5FofL+SanAUZe+/QfeK0+OIuwDIRu2vSg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/tailscale/hujson",
+    "Version": "v0.0.0-20260302212456-ecc657c15afd",
+    "Time": "2026-03-02T21:24:56Z",
+    "Indirect": true,
+    "GoVersion": "1.23",
+    "Sum": "h1:Rf9uhF1+VJ7ZHqxrG8pJ6YacmHvVCmByDmGbAWCc/gA=",
+    "GoModSum": "h1:EbW0wDK/qEUYI0A5bqq0C2kF8JTQwWONmGDBbzsxxHo=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/tailscale/netlink",
+    "Version": "v1.1.1-0.20240822203006-4d49adab4de7",
+    "Time": "2024-08-22T20:30:06Z",
+    "Indirect": true,
+    "GoVersion": "1.12",
+    "Sum": "h1:uFsXVBE9Qr4ZoF094vE6iYTLDl0qCiKzYXlL6UeWObU=",
+    "GoModSum": "h1:NzVQi3Mleb+qzq8VmcWpSkcSYxXIg0DkI6XDzpVkhJ0=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/tailscale/peercred",
+    "Version": "v0.0.0-20250107143737-35a0c7bd7edc",
+    "Time": "2025-01-07T14:37:37Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:24heQPtnFR+yfntqhI3oAu9i27nEojcQ4NuBQOo5ZFA=",
+    "GoModSum": "h1:f93CXfllFsO9ZQVq+Zocb1Gp4G5Fz0b0rXHLOzt/Djc=",
+    "collected_notices": [
+      "LICENSE",
+      "AUTHORS"
+    ]
+  },
+  {
+    "Path": "github.com/tailscale/web-client-prebuilt",
+    "Version": "v0.0.0-20250124233751-d4cd19a26976",
+    "Time": "2025-01-24T23:37:51Z",
+    "Indirect": true,
+    "GoVersion": "1.21",
+    "Sum": "h1:UBPHPtv8+nEAy2PD8RyAhOYvau1ek0HDJqLS/Pysi14=",
+    "GoModSum": "h1:agQPE6y6ldqCOui2gkIh7ZMztTkIQKH049tv8siLuNQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/tailscale/xnet",
+    "Version": "v0.0.0-20240729143630-8497ac4dab2e",
+    "Time": "2024-07-29T14:36:30Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/tc-hib/winres",
+    "Version": "v0.2.1",
+    "Time": "2023-09-10T15:36:25Z",
+    "Indirect": true,
+    "GoVersion": "1.19",
+    "Sum": "h1:YDE0FiP0VmtRaDn7+aaChp1KiF4owBiJa5l964l5ujA=",
+    "GoModSum": "h1:C/JaNhH3KBvhNKVbvdlDWkbMDO9H4fKKDaN7/07SSuk=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/tidwall/gjson",
+    "Version": "v1.18.0",
+    "Time": "2024-10-02T03:45:20Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/tidwall/match",
+    "Version": "v1.1.1",
+    "Time": "2021-10-08T14:36:13Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/tidwall/pretty",
+    "Version": "v1.2.1",
+    "Time": "2022-10-01T20:21:24Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/tidwall/sjson",
+    "Version": "v1.2.5",
+    "Time": "2022-08-05T01:15:59Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/tjfoc/gmsm",
+    "Version": "v1.4.1",
+    "Time": "2021-07-09T03:07:47Z",
+    "Indirect": true,
+    "GoVersion": "1.14",
+    "Sum": "h1:aMe1GlZb+0bLjn+cKTPEvvn9oUEBlJitaZiiBwsbgho=",
+    "GoModSum": "h1:j4INPkHWMrhJb38G+J6W4Tw0AbuN8Thu3PbdVYhVcTE=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/tmc/grpc-websocket-proxy",
+    "Version": "v0.0.0-20220101234140-673ab2c3ae75",
+    "Time": "2022-01-01T23:41:40Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/tomasen/realip",
+    "Version": "v0.0.0-20180522021738-f0c99a92ddce",
+    "Time": "2018-05-22T02:17:38Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/toqueteos/webbrowser",
+    "Version": "v1.2.0",
+    "Time": "2019-07-25T20:48:05Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/transparency-dev/merkle",
+    "Version": "v0.0.2",
+    "Time": "2023-05-05T09:59:12Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/u-root/uio",
+    "Version": "v0.0.0-20240224005618-d2acac8f3701",
+    "Time": "2024-02-24T00:56:18Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/vishvananda/netns",
+    "Version": "v0.0.5",
+    "Time": "2024-08-13T19:31:45Z",
+    "Indirect": true,
+    "GoVersion": "1.17",
+    "Sum": "h1:DfiHV+j8bA32MFM7bfEunvT8IAqQ/NzSJHtcmW5zdEY=",
+    "GoModSum": "h1:SpkAiCQRtJ6TvvxPnOSyH3BMl6unz3xZlaprSwhNNJM=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/wlynxg/anet",
+    "Version": "v0.0.5",
+    "Time": "2024-10-04T14:22:25Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/x448/float16",
+    "Version": "v0.8.4",
+    "Time": "2020-01-17T18:31:28Z",
+    "Indirect": true,
+    "GoVersion": "1.11",
+    "Sum": "h1:qLwI1I70+NjRFUR3zs1JPUCgaCXSh3SW62uAKT1mSBM=",
+    "GoModSum": "h1:14CWIYCyZA/cWjXOioeEpHeN/83MdbZDRQHoFcYsOfg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/xchacha20-poly1305/TLS-scribe",
+    "Version": "v0.13.1",
+    "Time": "2026-09-29T14:29:55Z",
+    "GoVersion": "1.26.0",
+    "Sum": "h1:9RyGVz4qBbFfhqPbjRQlJYV4WICO1CVJ+DNVp1nRThs=",
+    "GoModSum": "h1:PKNcs0W8L8z+EuRLYltygza3lBrNv1DewTfZQDJXe1U=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/xchacha20-poly1305/anchor",
+    "Version": "v0.9.0",
+    "Time": "2026-09-29T14:46:35Z",
+    "GoVersion": "1.26.0",
+    "Sum": "h1:Qu+qCJxqv072gZ8AoxgusvnZV6bPbvdMVUXm1sw431Q=",
+    "GoModSum": "h1:AJWthWMk6BwluZxu0nFTgVYomKRuqamph0RVNvjG5O8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/xchacha20-poly1305/libping",
+    "Version": "v0.10.5",
+    "Time": "2026-08-24T12:46:57Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:YswEIbhL0EmIFR9FetRBjHDK62nNr5puuTdLzsZ0KvI=",
+    "GoModSum": "h1:SXTHinnDLUAnAaMSy3sg5Ts07EUil3XQNt40+uOzgu8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/xchacha20-poly1305/protect-go",
+    "Version": "v0.2.0",
+    "Time": "2026-10-12T08:21:42Z",
+    "GoVersion": "1.26.0",
+    "Sum": "h1:sOb/DToy4P4oeofpUbJDKSilIPjBjEwFMs/4INbpWKc=",
+    "GoModSum": "h1:tddzCrw5CXwFuDB9ti1RlDg+sYjFPaD+4OYw2Zwn2uc=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/xchacha20-poly1305/sing-trusttunnel",
+    "Version": "v0.3.3-0.20260928134000-daacc8079caf",
+    "Time": "2026-09-28T13:40:00Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:t6HCl6MNutOMQK9NC5X0RDFAA2wpiINIg2IQS2Dsocs=",
+    "GoModSum": "h1:yM25Hg+iQTeJBaIMi8igVdXORBXJC1HGxAW1WEKqJOI=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/xchacha20-poly1305/stunuri-go",
+    "Version": "v0.2.0",
+    "Time": "2026-10-29T06:28:48Z",
+    "GoVersion": "1.22",
+    "Sum": "h1:acE/f7KfbyHPigxWYfKfoIkHazFLVWzyDELaT1Y+mtQ=",
+    "GoModSum": "h1:GqSX5YNfy7kEi3dWbULlwXxSkFjCatxCo0D4jZ+852w=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/xiang90/probing",
+    "Version": "v0.0.0-20221125231312-a49e3df8f510",
+    "Time": "2022-11-25T23:13:12Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/xyproto/randomstring",
+    "Version": "v1.0.5",
+    "Time": "2023-02-06T10:49:41Z",
+    "Indirect": true,
+    "GoVersion": "1.17",
+    "Sum": "h1:YtlWPoRdgMu3NZtP45drfy1GKoojuR7hmRcnhZqKjWU=",
+    "GoModSum": "h1:rgmS5DeNXLivK7YprL0pY+lTuhNQW3iGxZ18UQApw/E=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/youmark/pkcs8",
+    "Version": "v0.0.0-20240726163527-a2c0da244d78",
+    "Time": "2024-07-26T16:35:27Z",
+    "Indirect": true,
+    "GoVersion": "1.17",
+    "Sum": "h1:ilQV1hzziu+LLM3zUTJ0trRztfwgjqKnBWNtSRkbmwM=",
+    "GoModSum": "h1:aL8wCCfTfSfmXjznFBSZNN13rSJjlIOI1fUNAtF7rmI=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/yuin/goldmark",
+    "Version": "v1.4.13",
+    "Time": "2022-07-09T07:22:17Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "GoModSum": "h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/zeebo/assert",
+    "Version": "v1.1.0",
+    "Time": "2019-11-15T02:13:36Z",
+    "Indirect": true,
+    "GoVersion": "1.13",
+    "Sum": "h1:hU1L1vLTHsnO8x8c9KAR5GmM5QscxHg5RNU5z5qbUWY=",
+    "GoModSum": "h1:Pq9JiuJQpG8JLJdtkwrJESF0Foym2/D9XMU5ciN/wJ0=",
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/zeebo/blake3",
+    "Version": "v0.2.4",
+    "Time": "2024-08-14T14:47:02Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:KYQPkhpRtcqh0ssGYcKLG1JYvddkEA8QwCM/yBqhaZI=",
+    "GoModSum": "h1:7eeQ6d2iXWRGF6npfaxl2CU+xy2Fjo2gxeyZGCRUjcE=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "github.com/zeebo/errs",
+    "Version": "v1.4.0",
+    "Time": "2023-05-08T22:56:17Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "github.com/zeebo/pcg",
+    "Version": "v1.0.1",
+    "Time": "2021-09-09T16:41:37Z",
+    "Indirect": true,
+    "GoVersion": "1.13",
+    "Sum": "h1:lyqfGeWiv4ahac6ttHs+I5hwtH/+1mrhlCtVNQM2kHo=",
+    "GoModSum": "h1:09F0S9iiKrwn9rlI5yjLkmrug154/YRW6KnnXVDM/l4=",
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/bbolt",
+    "Version": "v1.4.0",
+    "Time": "2025-02-05T12:08:07Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/api/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/client/pkg/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/client/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/etcdctl/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/etcdutl/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/pkg/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/server/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/tests/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/etcd/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-05-15T19:32:45Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/gofail",
+    "Version": "v0.2.0",
+    "Time": "2024-06-19T04:45:01Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.etcd.io/raft/v3",
+    "Version": "v3.6.0",
+    "Time": "2025-02-05T08:13:35Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opencensus.io",
+    "Version": "v0.24.0",
+    "Time": "2022-11-03T20:13:50Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/auto/sdk",
+    "Version": "v1.2.1",
+    "Time": "2025-09-15T16:53:44Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:jXsnJ4Lmnqd11kwkBV2LgLoFMZKizbCi5fNZ/ipaZ64=",
+    "GoModSum": "h1:KRTj+aOaElaLi+wW1kO/DZRXwkF4C5xPbEe3ZiIhN7Y=",
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/contrib/detectors/gcp",
+    "Version": "v1.44.0",
+    "Time": "2026-05-28T05:28:14Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc",
+    "Version": "v0.59.0",
+    "Time": "2025-01-17T19:30:40Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp",
+    "Version": "v0.61.0",
+    "Time": "2025-05-22T14:29:43Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/otel",
+    "Version": "v1.44.0",
+    "Time": "2026-05-27T16:42:37Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:JjwHmHpA4iZ3wBxluu2fbbE7j4kqlE8jXyAyPXH7HqU=",
+    "GoModSum": "h1:BMgjTHL9WPRlRjL2oZCBTL4whCGtXch2H4BhOPIAyYc=",
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/otel/exporters/otlp/otlptrace",
+    "Version": "v1.34.0",
+    "Time": "2025-01-17T16:21:54Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc",
+    "Version": "v1.34.0",
+    "Time": "2025-01-17T16:21:54Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/otel/metric",
+    "Version": "v1.44.0",
+    "Time": "2026-05-27T16:42:37Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:1w0gILTcHdr3YI+ixLyjemwrVnsMURbTZFrSYCdDdmc=",
+    "GoModSum": "h1:8O7hanEPBNgEMmybD3s2VBKcgWOCsA6tzHBPODAiquo=",
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/otel/sdk",
+    "Version": "v1.44.0",
+    "Time": "2026-05-27T16:42:37Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:nHYwb9lK+fJPU/dnT6s7W7Z8itMWyqrnVfbheVYrZ58=",
+    "GoModSum": "h1:Osuydd3Se74nqjAKxid74N5eC+jfEqfTegHRnq58oK0=",
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/otel/sdk/metric",
+    "Version": "v1.44.0",
+    "Time": "2026-05-27T16:42:37Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:3LlKgI+VjbVsjNRFZJZAJ30WjXC5VkNRks6si09iEfI=",
+    "GoModSum": "h1:5B5pMARnXxKhltooO4xUuCBorl65a4EpnTalObqOigA=",
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/otel/trace",
+    "Version": "v1.44.0",
+    "Time": "2026-05-27T16:42:37Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:jxF5CsGYCe74MCRx2X4g7WsY/VBKRqqpNvXlX/6gtIk=",
+    "GoModSum": "h1:oLl1jrMQAVo6v3GAggN+1VH9VIz9iUSvW53sW1Q8PIE=",
+    "collected_notices": []
+  },
+  {
+    "Path": "go.opentelemetry.io/proto/otlp",
+    "Version": "v1.5.0",
+    "Time": "2025-01-06T12:02:47Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.uber.org/goleak",
+    "Version": "v1.3.0",
+    "Time": "2023-10-24T16:28:03Z",
+    "Indirect": true,
+    "GoVersion": "1.20",
+    "Sum": "h1:2K3zAYmnTNqV73imy9J1T3WC+gmCePx2hEGkimedGto=",
+    "GoModSum": "h1:CoHD4mav9JJNrW/WLlf7HGZPjdw8EucARQHekz1X6bE=",
+    "collected_notices": []
+  },
+  {
+    "Path": "go.uber.org/mock",
+    "Version": "v0.5.2",
+    "Time": "2025-04-28T16:20:04Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "go.uber.org/multierr",
+    "Version": "v1.11.0",
+    "Time": "2023-03-29T23:00:37Z",
+    "Indirect": true,
+    "GoVersion": "1.19",
+    "Sum": "h1:blXXJkSxSSfBVBlC76pxqeO+LN3aDfLQo+309xJstO0=",
+    "GoModSum": "h1:20+QtiLqy0Nd6FdQB9TLXag12DsQkrbs3htMFfDN80Y=",
+    "collected_notices": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "Path": "go.uber.org/zap",
+    "Version": "v1.28.0",
+    "Time": "2026-04-28T02:13:09Z",
+    "Indirect": true,
+    "GoVersion": "1.19",
+    "Sum": "h1:IZzaP1Fv73/T/pBMLk4VutPl36uNC+OSUh3JLG3FIjo=",
+    "GoModSum": "h1:rDLpOi171uODNm/mxFcuYWxDsqWSAVkFdX4XojSKg/Q=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "go.uber.org/zap/exp",
+    "Version": "v0.3.0",
+    "Time": "2024-10-22T15:46:07Z",
+    "Indirect": true,
+    "GoVersion": "1.19",
+    "Sum": "h1:6JYzdifzYkGmTdRR59oYH+Ng7k49H9qVpWwNSsGJj3U=",
+    "GoModSum": "h1:5I384qq7XGxYyByIhHm6jg5CHkGY0nsTfbDLgDDlgJQ=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "go.yaml.in/yaml/v3",
+    "Version": "v3.0.5",
+    "Time": "2026-07-26T14:51:55Z",
+    "Indirect": true,
+    "GoVersion": "1.16",
+    "Sum": "h1:N6y/pJk8buWs9NY5ERU2HSMfm+IuD/OtfdAnq6kESPw=",
+    "GoModSum": "h1:HVTZu1O7/Vkt2N+BFy8Zza+lnLsABggaTM2ZpNIGuKg=",
+    "collected_notices": [
+      "NOTICE",
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "go4.org/mem",
+    "Version": "v0.0.0-20240501181205-ae6ca9944745",
+    "Time": "2024-05-01T18:12:05Z",
+    "Indirect": true,
+    "GoVersion": "1.14",
+    "Sum": "h1:Tl++JLUCe4sxGu8cTpDzRLd3tN7US4hOxG5YpKCzkek=",
+    "GoModSum": "h1:reUoABIJ9ikfM5sgtSF3Wushcza7+WeD01VB9Lirh3g=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "go4.org/netipx",
+    "Version": "v0.0.0-20231129151722-fdeea329fbba",
+    "Time": "2023-11-29T15:17:22Z",
+    "GoVersion": "1.18",
+    "Sum": "h1:0b9z3AuHCjxk0x/opv64kcgZLBseWJUpBw5I82+2U4M=",
+    "GoModSum": "h1:PLyyIXexvUFg3Owu6p/WfdlivPbZJsZdgWZlrGope/Y=",
+    "collected_notices": [
+      "LICENSE",
+      "AUTHORS"
+    ]
+  },
+  {
+    "Path": "golang.org/x/crypto",
+    "Version": "v0.57.0",
+    "Time": "2026-09-08T18:05:01Z",
+    "Indirect": true,
+    "GoVersion": "1.26.0",
+    "Sum": "h1:3ZVCjf8Ggz7zneR/EHRVx68Ctf+2pmIMP2UFhh9cC6M=",
+    "GoModSum": "h1:Fdz0i5U6CoizGwLda9DttjSk6qlZo25zYNtR+ycvuZA=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/exp",
+    "Version": "v0.0.0-20260908205506-85c1c2202aba",
+    "Time": "2026-09-08T20:55:06Z",
+    "Indirect": true,
+    "GoVersion": "1.26.0",
+    "Sum": "h1:Ck8QetSgk912qxWLMCKxd0in+aiyBQyDSMae6e/xmpU=",
+    "GoModSum": "h1:50RgIsmK7OwqzTTeqcSXQW8SswW0o8fRcDxmqGluJ8E=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/exp/typeparams",
+    "Version": "v0.0.0-20231108232855-2478ac86f678",
+    "Time": "2023-11-08T23:28:55Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.org/x/image",
+    "Version": "v0.41.0",
+    "Time": "2026-05-21T20:57:52Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:8wS72eGJMJaBxK6okTzd4WaXumUlTVlb753MlsSvTCo=",
+    "GoModSum": "h1:uIc348UZMSvS5Z65CVZ7iDPaNobNFEPeJ4kbqTOszmA=",
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.org/x/lint",
+    "Version": "v0.0.0-20200302205851-738671d3881b",
+    "Time": "2020-03-02T20:58:51Z",
+    "Indirect": true,
+    "GoVersion": "1.11",
+    "GoModSum": "h1:3xt1FjdF8hUf6vQPIChWIBhFzV8gjjsPE/fR3IyQdNY=",
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.org/x/mod",
+    "Version": "v0.41.0",
+    "Time": "2026-08-24T20:56:42Z",
+    "GoVersion": "1.26.0",
+    "Sum": "h1:qJmnOUb4YB+FsEuM3HcWucdZASCPGhsX6uljO6pog0c=",
+    "GoModSum": "h1:Ek9pY8RKWXwsWvd3rQiHYtMqkjSUV+s1Rj7j4H5Ur6o=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/net",
+    "Version": "v0.59.0",
+    "Time": "2026-09-08T19:18:02Z",
+    "GoVersion": "1.26.0",
+    "Sum": "h1:5zfYln+w5XCxwrnMMJPufRgNoXEaGxl0wo5GqPXyues=",
+    "GoModSum": "h1:2DA/G1UfVbCpQPeWTmMPGY7Cs2PkBkwu743bVX5PIVg=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/oauth2",
+    "Version": "v0.36.0",
+    "Time": "2026-02-11T19:14:10Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:peZ/1z27fi9hUOFCAZaHyrpWG5lwe0RJEEEeH0ThlIs=",
+    "GoModSum": "h1:YDBUJMTkDnJS+A4BP4eZBjCqtokkg1hODuPjwiGPO7Q=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/perf",
+    "Version": "v0.0.0-20250813145418-2f7363a06fe1",
+    "Time": "2025-08-13T14:54:18Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.org/x/sync",
+    "Version": "v0.23.0",
+    "Time": "2026-08-31T03:04:41Z",
+    "Indirect": true,
+    "GoVersion": "1.26.0",
+    "Sum": "h1:KameEIfc1IkluZyXWLn39Wd4tURc6GbCiISGiZm2bQk=",
+    "GoModSum": "h1:sUUOizhqBxiL6pEWpqNLUiaJn1ShEbZ6BBqskPbjZm0=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/sys",
+    "Version": "v0.49.0",
+    "Time": "2026-10-06T18:35:47Z",
+    "GoVersion": "1.26.0",
+    "Sum": "h1:XbzkgYJHdqh/8m2Uu0W/dQv8nktxx4BFHp1M0gROTXA=",
+    "GoModSum": "h1:hNLxWAXmnKAxqDtdwIYC4bM9oQPEecfsnNMuSxOs3og=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/telemetry",
+    "Version": "v0.0.0-20260908163034-4bcc4b2ee518",
+    "Time": "2026-09-08T16:30:34Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.org/x/term",
+    "Version": "v0.46.0",
+    "Time": "2026-09-08T16:27:41Z",
+    "Indirect": true,
+    "GoVersion": "1.26.0",
+    "Sum": "h1:3+OXuTbaKDgwk8jTi3aSLHRlmWqHEUDUtxnbFigO4YE=",
+    "GoModSum": "h1:+K02xbkittuwc0Am4abfA3Fc+XRGXkvBXNO88NCXPoc=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/text",
+    "Version": "v0.42.0",
+    "Time": "2026-09-08T16:29:55Z",
+    "GoVersion": "1.26.0",
+    "Sum": "h1:JbOZXgfeCPU9gacVtYliJqOhD+zhrEqK4LfdpmlUZqI=",
+    "GoModSum": "h1:ojzP1Z+2QtioaF8DTtO8K5q7JWVVYwZKenzujK0Zd0E=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/time",
+    "Version": "v0.15.0",
+    "Time": "2026-02-11T19:14:29Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:bbrp8t3bGUeFOx08pvsMYRTCVSMk89u4tKbNOZbp88U=",
+    "GoModSum": "h1:Y4YMaQmXwGQZoFaVFk4YpCt4FLQMYKZe9oeV/f4MSno=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/tools",
+    "Version": "v0.50.0",
+    "Time": "2026-09-08T19:59:56Z",
+    "Indirect": true,
+    "GoVersion": "1.26.0",
+    "Sum": "h1:c2ifzfcuY7L90lZ2aKd8S4K2NpASF08SZx9ZuJkHmSU=",
+    "GoModSum": "h1:7ulVMw3831Mwi5EZD6RomGyffr4VFjuNYXf2BbCEAV0=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.org/x/tools/go/expect",
+    "Version": "v0.1.1-deprecated",
+    "Time": "2025-06-13T18:44:18Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.org/x/tools/go/packages/packagestest",
+    "Version": "v0.1.1-deprecated",
+    "Time": "2025-06-13T18:44:18Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.org/x/xerrors",
+    "Version": "v0.0.0-20200804184101-5ec99f83aff1",
+    "Time": "2020-08-04T18:41:01Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.zx2c4.com/wintun",
+    "Version": "v0.0.0-20230126152724-0fa3db229ce2",
+    "Time": "2023-01-26T15:27:24Z",
+    "Indirect": true,
+    "GoVersion": "1.17",
+    "Sum": "h1:B82qJJgjvYKsXS9jeunTOisW56dUokqW/FOteYJJ/yg=",
+    "GoModSum": "h1:deeaetjYA+DHMHg+sMSMI58GrEteJUUzzw7en6TJQcI=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "golang.zx2c4.com/wireguard/wgctrl",
+    "Version": "v0.0.0-20241231184526-a9ab2273dd10",
+    "Time": "2024-12-31T18:45:26Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "golang.zx2c4.com/wireguard/windows",
+    "Version": "v0.5.3",
+    "Time": "2021-12-22T17:41:20Z",
+    "Indirect": true,
+    "GoVersion": "1.18",
+    "Sum": "h1:On6j2Rpn3OEMXqBq00QEDC7bWSZrPIHKIus8eIuExIE=",
+    "GoModSum": "h1:9TEe8TJmtwyQebdFwAkEWOPr3prrtqm+REGFifP60hI=",
+    "collected_notices": [
+      "COPYING"
+    ]
+  },
+  {
+    "Path": "gonum.org/v1/gonum",
+    "Version": "v0.17.0",
+    "Time": "2025-12-29T19:16:44Z",
+    "Indirect": true,
+    "GoVersion": "1.24.0",
+    "Sum": "h1:VbpOemQlsSMrYmn7T2OUvQ4dqxQXU+ouZFQsZOx50z4=",
+    "GoModSum": "h1:El3tOrEuMpv2UdMrbNlKEh9vd86bmQ6vqIcDwxEOc1E=",
+    "collected_notices": []
+  },
+  {
+    "Path": "google.golang.org/api",
+    "Version": "v0.226.0",
+    "Time": "2025-03-13T21:27:04Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "google.golang.org/appengine",
+    "Version": "v1.4.0",
+    "Time": "2018-12-17T20:59:03Z",
+    "Indirect": true,
+    "GoModSum": "h1:xpcJRLb0r/rnEns0DIKYYv+WjYCduHsrkT7/EB5XEv4=",
+    "collected_notices": []
+  },
+  {
+    "Path": "google.golang.org/genproto",
+    "Version": "v0.0.0-20250122153221-138b5a5a4fd4",
+    "Time": "2025-01-22T15:32:21Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "google.golang.org/genproto/googleapis/api",
+    "Version": "v0.0.0-20260526163538-3dc84a4a5aaa",
+    "Time": "2026-05-26T16:35:38Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "google.golang.org/genproto/googleapis/rpc",
+    "Version": "v0.0.0-20260526163538-3dc84a4a5aaa",
+    "Time": "2026-05-26T16:35:38Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:mZHHdPZl0dbGHCflZgAq/Q468DWVFcU2whhB2KAo8fk=",
+    "GoModSum": "h1:4Hqkh8ycfw05ld/3BWL7rJOSfebL2Q+DVDeRgYgxUU8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "google.golang.org/grpc",
+    "Version": "v1.83.2",
+    "Time": "2026-08-25T15:47:16Z",
+    "GoVersion": "1.25.0",
+    "Sum": "h1:EManeRomTObA0BU7I8vXgg/78uE5MJ9M8B39EX2WscU=",
+    "GoModSum": "h1:YPI1hK3kDked6iHvgX3tR0y+nX/qpMFKhPgFsokw1S8=",
+    "collected_notices": [
+      "NOTICE.txt",
+      "LICENSE",
+      "AUTHORS"
+    ]
+  },
+  {
+    "Path": "google.golang.org/grpc/cmd/protoc-gen-go-grpc",
+    "Version": "v1.6.2",
+    "Time": "2026-05-07T05:07:53Z",
+    "Indirect": true,
+    "GoVersion": "1.25.0",
+    "Sum": "h1:rgSNvqscFZ1JgV/4wH5GOsZFSFkR2Eua9As3KIr2LlM=",
+    "GoModSum": "h1:iMEtFwDlAhjDU9L5mY6U1XLwlIId/G3h+QcBHDIvrJ8=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "google.golang.org/protobuf",
+    "Version": "v1.36.12",
+    "Time": "2026-08-10T13:29:45Z",
+    "GoVersion": "1.23",
+    "Sum": "h1:pJOKDDOyeXErUroCihFAd5LQuwXBSpVnKGrj5o/fwxc=",
+    "GoModSum": "h1:HTf+CrKn2C3g5S8VImy6tdcUvCska2kB7j23XfzDpco=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "gopkg.in/check.v1",
+    "Version": "v0.0.0-20161208181325-20d25e280405",
+    "Time": "2016-12-08T18:13:25Z",
+    "Indirect": true,
+    "GoModSum": "h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=",
+    "collected_notices": []
+  },
+  {
+    "Path": "gopkg.in/natefinch/lumberjack.v2",
+    "Version": "v2.2.1",
+    "Time": "2023-02-06T19:38:14Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "gopkg.in/yaml.v1",
+    "Version": "v1.0.0-20140924161607-9f9df34309c0",
+    "Time": "2014-09-24T16:16:07Z",
+    "Indirect": true,
+    "GoModSum": "h1:WDnlLJ4WF5VGsH/HVa3CI79GS0ol3YnhVnKP89i0kNg=",
+    "collected_notices": []
+  },
+  {
+    "Path": "gopkg.in/yaml.v3",
+    "Version": "v3.0.1",
+    "Time": "2022-05-27T08:35:30Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "honnef.co/go/tools",
+    "Version": "v0.6.1",
+    "Time": "2025-03-05T23:39:47Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "howett.net/plist",
+    "Version": "v1.0.1",
+    "Time": "2023-10-24T16:34:31Z",
+    "GoVersion": "1.12",
+    "Sum": "h1:37GdZ8tP09Q35o9ych3ehygcsL+HqKSwzctveSlarvM=",
+    "GoModSum": "h1:lqaXoTrLY4hg8tnEzNru53gicrbv7rrk+2xJA/7hw9g=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "k8s.io/klog/v2",
+    "Version": "v2.130.1",
+    "Time": "2024-06-20T00:51:19Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "lukechampine.com/blake3",
+    "Version": "v1.4.1",
+    "Time": "2025-05-08T12:37:30Z",
+    "Indirect": true,
+    "GoVersion": "1.22",
+    "Sum": "h1:I3Smz7gso8w4/TunLKec6K2fn+kyKtDxr/xcQEN84Wg=",
+    "GoModSum": "h1:QFosUxmjB8mnrWFSNwKmvxHpfY72bmD2tQ0kBMM3kwo=",
+    "collected_notices": [
+      "LICENSE"
+    ]
+  },
+  {
+    "Path": "mvdan.cc/gofumpt",
+    "Version": "v0.9.2",
+    "Time": "2025-10-21T22:24:55Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "sigs.k8s.io/json",
+    "Version": "v0.0.0-20241010143419-9aa6b5e7a4b3",
+    "Time": "2024-10-10T14:34:19Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "sigs.k8s.io/yaml",
+    "Version": "v1.4.0",
+    "Time": "2023-10-24T17:13:34Z",
+    "Indirect": true,
+    "collected_notices": []
+  },
+  {
+    "Path": "software.sslmate.com/src/go-pkcs12",
+    "Version": "v0.4.0",
+    "Time": "2023-11-05T13:29:06Z",
+    "Indirect": true,
+    "GoVersion": "1.19",
+    "Sum": "h1:H2g08FrTvSFKUj+D309j1DPfk5APnIdAQAB8aEykJ5k=",
+    "GoModSum": "h1:Qiz0EyvDRJjjxGyUQa2cCNZn/wMyzrRJ/qcDXOQazLI=",
+    "collected_notices": []
+  },
+  {
+    "Path": "zombiezen.com/go/capnproto2",
+    "Version": "v2.18.2+incompatible",
+    "Time": "2021-05-13T18:10:49Z",
+    "Indirect": true,
+    "collected_notices": []
+  }
+]
